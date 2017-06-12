@@ -4,7 +4,6 @@ copyright:
   years: 2016, 2017
 lastupdated: "2017-02-06"
 
----
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}

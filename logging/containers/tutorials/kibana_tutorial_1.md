@@ -131,7 +131,7 @@ In this sample app, when you test your app in a browser, the app writes to stdou
               <tr>
                 <td>*kubernetes.host*</td>
                 <td>The value of this field informs about the public IP that is available to access the app from the internet. </td>
-                <td>169.47.218.231</td>
+                <td>xxx.xx.xxx.xxx</td>
               </tr>
               <tr>
                 <td>*kubernetes.labels.label_name*</td>
@@ -207,6 +207,7 @@ In this sample app, when you test your app in a browser, the app writes to stdou
         }
       }
     ```
+    
 
     If you cannot see any data, try changing the time filter. For more information, see [Setting a time filter](../../kibana4/k4_filter_logs.html#set_time_filter).
     
