@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # 컨테이너에서 기본이 아닌 로그 데이터 수집
 {: #logging_containers_collect_data}
 
-컨테이너 내부의 기본이 아닌 로그 위치에서 데이터를 캡처하려면 컨테이너를 작성할 때 **LOG_LOCATIONS** 환경 변수를 설정하십시오.
+{{site.data.keyword.Bluemix_notm}} 관리 클라우드 인프라에 배치된 컨테이너 내의 기본값이 아닌 로그 위치에서 데이터를 캡처하려면 컨테이너를 작성할 때 **LOG_LOCATIONS** 환경 변수를 설정하십시오.
 {:shortdesc}
 
 * 컨테이너를 작성할 때 로그 파일의 경로와 함께 **LOG_LOCATIONS** 환경 변수를 추가하십시오. 
@@ -126,7 +126,7 @@ CLI를 통해 기본이 아닌 데이터를 수집하려면 다음 단계를 완
         </tr>
 	<tr>
           <td align="left">registry.domain_name</td>
-          <td align="left">공용 영역의 레지스트리입니다. 예를 들어, 미국 남부 지역의 경우 기본 도메인 이름은 `ng.bluemix.net`이고, 영국의 경우 기본 도메인 이름은 `eu-gb.bluemix.net`입니다. </td>
+          <td align="left">퍼블릭 지역의 레지스트리입니다. 예를 들어, 미국 남부 지역의 경우 기본 도메인 이름은 `ng.bluemix.net`이고, 영국의 경우 기본 도메인 이름은 `eu-gb.bluemix.net`입니다. </td>
         </tr>
         <tr>
           <td align="left">imageName</td>

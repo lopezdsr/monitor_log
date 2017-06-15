@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,18 +21,21 @@ lastupdated: "2017-03-13"
 
 カスタム検索を定義するには、以下のタスクを実行します。
 
-1. Cloud Foundry (CF) アプリまたはコンテナーの**「ログ」**タブにアクセスします。 
+1. Kibana を起動します。
 
-    1. {{site.data.keyword.Bluemix}} ダッシュボードでアプリ名またはコンテナーをクリックします。
-    2. CF アプリケーションの場合、**「ログ」**タブをクリックします。コンテナーの場合、**「モニターおよびログ (Monitoring and logs)」**をクリックしてから、**「ロギング (Logging)」**タブを選択します。
+    {{site.data.keyword.Bluemix}} が管理するクラウド・インフラストラクチャー内で実行している Cloud Foundry (CF) アプリまたはコンテナーの場合、以下のステップを実行してください。
     
-    ログが表示されます。
+    1. Cloud Foundry (CF) アプリまたはコンテナーの**「ログ」**タブにアクセスします。 
 
-2. Kibana にアクセスします。**「詳細ビュー」** ![「詳細ビュー」リンク](images/logging_advanced_view.jpg "「詳細ビュー」リンク") をクリックします。Kibana ダッシュボードが表示されます。
+        {{site.data.keyword.Bluemix_notm}} ダッシュボードでアプリ名またはコンテナーをクリックします。次に、CF アプリケーションの場合は**「ログ」**タブをクリックし、コンテナーの場合は**「モニターおよびログ」**をクリックしてから**「ロギング」**タブを選択します。ログが表示されます。
 
+    2. Kibana にアクセスします。**「詳細ビュー」** ![「詳細ビュー」リンク](images/logging_advanced_view.jpg "「詳細ビュー」リンク") をクリックします。Kibana ダッシュボードが表示されます。
+    
+    Kubernetes クラスター内で実行しているコンテナーの場合、[ブラウザーから Kibana を起動します](k4_launch.html#launch_Kibana_from_browser)。 
+    
     Kibana にアクセスすると、デフォルト検索が適用されます。Kibana を起動した対象リソースのインスタンスのリストに関するログを確認できます。そのスペース内の {{site.data.keyword.Bluemix_notm}} リソースのすべてまたは任意のものについて、ログをフィルタリングできます。
 
-3. 「Discover」ページを見て、表示されているデータのサブセットを確認します。詳しくは、『[「Discover」ページで表示されているデータの識別](logging_kibana_analize_logs_interactively.html#k4_identify_data)』を参照してください。次に、項目をフィルタリングするためのデフォルト照会を変更します。
+2. 「Discover」ページを見て、表示されているデータのサブセットを確認します。詳しくは、『[「Discover」ページで表示されているデータの識別](logging_kibana_analize_logs_interactively.html#k4_identify_data)』を参照してください。次に、項目をフィルタリングするためのデフォルト照会を変更します。
 
     **注:** カスタム照会の定義には、Lucene 照会言語を使用します。詳しくは、『[Apache Lucene - Query Parser Syntax  ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}』を参照してください。
     
@@ -46,7 +49,7 @@ lastupdated: "2017-03-13"
 
      例えば、CF アプリの場合、照会 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` を作成できます。これにより、インスタンス *0* および *1* の項目のみがリストされます。 
 
-4. 照会を保存して、後から再使用できるようにします。詳しくは、『[検索の保存](logging_kibana_filtering_logs.html#k4_save_search)』を参照してください。 
+3. 照会を保存して、後から再使用できるようにします。詳しくは、『[検索の保存](logging_kibana_filtering_logs.html#k4_save_search)』を参照してください。 
 
 **注:** 照会を削除する必要がある場合は、『[検索の削除](logging_kibana_filtering_logs.html#k4_delete_search)』を参照してください。
 

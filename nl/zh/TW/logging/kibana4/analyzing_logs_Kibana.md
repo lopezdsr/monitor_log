@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Kibana 包括可用來分析日誌的不同頁面：
 
 * 從 {{site.data.keyword.Bluemix_notm}}
 
-    在 Kibana 中，您可以在特定 CF 應用程式的環境定義下，啟動至該特定應用程式的日誌。
+    在 Kibana 中，您可以在特定 CF 應用程式的環境定義內，啟動至該特定應用程式的日誌。
     
-    在 Kibana 中，您可以在特定 Docker 容器的環境定義下，啟動至該特定容器的日誌。 
+    在 Kibana 中，您可以在特定 Docker 容器的環境定義內，啟動至該特定容器的日誌。此特性只會套用至 {{site.data.keyword.Bluemix_notm}} 所管理雲端基礎架構中所部署的容器。
     
     若為 CF 應用程式，用來過濾 Kibana 中可分析資料的查詢，會擷取 Cloud Foundry 應用程式的日誌項目。Kibana 依預設顯示的日誌資訊，全都與單一 Cloud Foundry 應用程式及其所有實例相關。 
     

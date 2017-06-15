@@ -39,7 +39,7 @@ Cloud Foundry 앱은 Cloud Foundry 로그 작성기(loggregator)를 사용하여
 
 * 사용자 환경에 고급 로깅을 추가하려면 [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated) 또는 [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local) 문서의 단계를 수행하십시오.
 
-## 로그 보유
+## 로그 보존
 
 {{site.data.keyword.Bluemix_dedicated_notm}} 및 {{site.data.keyword.Bluemix_local_notm}} Cloud Foundry 앱에서 로그 데이터가 기본적으로 30일 동안 저장됩니다.
 

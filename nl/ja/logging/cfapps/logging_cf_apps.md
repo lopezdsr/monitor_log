@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2017-04-06"
 
 以下の図は、{{site.data.keyword.Bluemix_notm}} での Cloud Foundry アプリの概要図を示します。
 
-![CF アプリ用のコンポーネント概要図](../images/logging_cf_apps_ov.jpg "CF アプリ用のコンポーネント概要図")
+![CF アプリ用のコンポーネント概要図](../images/logging_cf_apps_ov.gif "CF アプリ用のコンポーネント概要図")
  
 Cloud Foundry アプリのロギングは、Cloud Foundry インフラストラクチャーを使用して {{site.data.keyword.Bluemix_notm}} 上でアプリを実行すると自動的に有効になります。Cloud Foundry ランタイム・ログを表示するには、ログを STDOUT および STDERR に書き込む必要があります。詳しくは、『[CF アプリを介したランタイム・アプリケーションのロギング](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app)』を参照してください。
 

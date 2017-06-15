@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ Sie können Kibana so konfigurieren, dass für jeden Protokolleintrag die folgen
 
 
 
-## Kibana-Protokollformat für Docker-Container
+## Kibana-Protokollformat für Docker-Container, die in einer Bluemix-verwalteten Infrastruktur implementiert sind
 {: #kibana_log_format_containers}
 
 Sie können Kibana so konfigurieren, dass für jeden Protokolleintrag die folgenden Felder auf der Seite *Discover* angezeigt werden:
@@ -73,7 +73,38 @@ Sie können Kibana so konfigurieren, dass für jeden Protokolleintrag die folgen
 | stream | Gibt den Typ von Protokoll an: stdout, stderr |
 | time | Das Datum und die Uhrzeit des Zeitpunkts für das Ereignis, als es auftrat. Die Zeitmarke ist bis auf die Millisekunde definiert.|
 | timestamp | Das Datum und die Uhrzeit des protokollierten Ereignisses. Die Zeitmarke ist bis auf die Millisekunde definiert. |
-{: caption="Tabelle 1. Felder für Docker-Container" caption-side="top"}
+{: caption="Tabelle 2. Felder für Docker-Container" caption-side="top"}
+
+## Kibana-Protokollformat für Docker-Container, die in einem Kubernetes-Cluster bereitgestellt sind
+{: #kibana_log_format_containers_kubernetes}
+
+Sie können Kibana so konfigurieren, dass auf der Seite *Discover* für jeden Protokolleintrag die folgenden Felder angezeigt werden. Diese Felder werden von {{site.data.keyword.IBM}} festgelegt und schließen Sie Ihre Nachrichtendaten ein. 
+
+| Feld | Beschreibung | Weitere Informationen |
+|-------|-------------|---------------------------|
+| @timestamp | `jjjj-MM-ttTHH:mm:ss:SS-0500`  <br> Der Zeitpunkt des protokollierten Ereignisses. <br> Die Zeitmarke ist bis auf die Millisekunde definiert. | |
+| @version | Die Version des Ereignisses. | |
+| ALCH_TENANT_ID | Die ID des {{site.data.keyword.Bluemix_notm}}-Bereichs. | |
+| \_id | Die eindeutige ID für Ihr Protokolldokument. | |
+| \_index | Der Index für Ihren Protokolleintrag. | |
+| \_score |  |  |
+| \_type | Der Typ von Protokoll. Beispiel: *logs*. | |
+| crn_str | Informationen zur Quelle des Protokolls. | Standardmäßig wird dieses Feld von {{site.data.keyword.IBM_notm}} festgelegt.<br> **Hinweis:** Wenn Sie die Protokollnachricht in einem gültigen JSON-Format senden und eines der Felder den Namen `crn` hat, wird der Wert des Feldes mit dem Wert, der in der Nachricht gesetzt wurde, überschrieben.  |  
+| docker.container_id_str | GUID des Containers, der in einem Pod ausgeführt wird. | |
+| ibm-containers.account_str | GUID des {{site.data.keyword.Bluemix_notm}}-Kontos.  |  |
+| ibm-containers.cluster_id_str | GUID des Kubernetes-Clusters.  |  |
+| ibm-containers.cluster_type_str |  | Wert, der für die interne Verwendung durch {{site.data.keyword.IBM_notm}} reserviert ist. |
+| ibm-containers.region_str | Region in {{site.data.keyword.Bluemix_notm}}.  |  |
+| kubernetes.container_name_str | Name des Containers, in dem eine App bereitgestellt ist.  |  |
+| kubernetes.host | Die öffentliche IP-Adresse des Workers, in dem der Container ausgeführt wird.  |  |
+| kubernetes.labels.*example_label_name*\_str | Schlüssel/Wert-Paar, das Sie an ein Kubernetes-Objekt wie z. B. einen Pod anhängen. | Jede Bezeichnung, die Sie an ein Kubernetes-Objekt anhängen, wird als Feld in dem Protokolleintrag aufgelistet, der in Kibana angezeigt wird.<br> Sie können 0 oder mehrere Bezeichnungen haben. |
+| kubernetes.namespace_name_str | Kubernetes-Namensbereich, in dem der Container bereitgestellt wird. |  |
+| kubernetes.pod_id_str | GUID des Pod, in dem der Container bereitgestellt wird. |  |
+| kubernetes.pod_name_str | Name des Pod. |  |
+| message | Die vollständige Nachricht. | Wenn Sie eine gültige JSON-formatierte Nachricht senden, wird jedes Feld einzeln geparst und in Kibana angezeigt.  |
+| stream_str |  | Wert, der für die interne Verwendung durch {{site.data.keyword.IBM_notm}} reserviert ist. |
+|tag_str |  | Wert, der für die interne Verwendung durch {{site.data.keyword.IBM_notm}} reserviert ist. |
+{: caption="Tabelle 3. Felder für Docker-Container" caption-side="top"}
 
 
 ## Kibana-Protokollformat für Message Hub
@@ -91,7 +122,7 @@ Sie können Kibana so konfigurieren, dass für jeden Protokolleintrag die folgen
 | \_type | Der Typ von Protokoll. Beispiel: *syslog*. |
 | loglevel | Die Priorität des protokollierten Ereignisses. Beispiel: **Info**. |
 | module | Dieses Feld ist auf den Wert **MessageHub** gesetzt. |
-{: caption="Tabelle 1. Felder für Message Hub-Ereignisse" caption-side="top"}
+{: caption="Tabelle 4. Felder für Nachrichtenhub-Ereignisse" caption-side="top"}
 
 Beispiel für einen Protokolleintrag:
 

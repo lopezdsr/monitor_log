@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # コンテナーからの非デフォルト・ログ・データの収集
 {: #logging_containers_collect_data}
 
-コンテナー内の非デフォルト・ログ・ロケーションからデータを取り込むには、コンテナーの作成時に環境変数 **LOG_LOCATIONS** を設定します。
+{{site.data.keyword.Bluemix_notm}} 管理のクラウド・インフラストラクチャーにデプロイされているコンテナー内の非デフォルト・ログ・ロケーションからデータを取り込むには、コンテナーの作成時に環境変数 **LOG_LOCATIONS** を設定します。
 {:shortdesc}
 
 * コンテナーの作成時にログ・ファイルへのパスを指定した **LOG_LOCATIONS** 環境変数を追加します。 

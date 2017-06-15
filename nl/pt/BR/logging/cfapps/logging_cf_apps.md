@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+Lastupdated: "2017-05-26"
 
 ---
 
@@ -25,7 +25,7 @@ Ao executar seus apps em uma plataforma como serviço (PaaS) de nuvem, como Clou
 
 A figura a seguir mostra uma visualização de alto nível de criação de log de apps Cloud Foundry no {{site.data.keyword.Bluemix_notm}}:
 
-![Visão geral do componente de alto nível para apps CF](../images/logging_cf_apps_ov.jpg "Visão geral do componente de alto nível para apps CF")
+![Visão geral de alto nível do componente para apps CF](../images/logging_cf_apps_ov.gif "Visão geral de alto nível do componente para apps CF")
  
 A criação de log de apps Cloud Foundry é ativada automaticamente ao usar a infraestrutura do Cloud Foundry para executar seus apps no {{site.data.keyword.Bluemix_notm}}. Para visualizar os logs de tempo de execução do Cloud Foundry, deve-se gravar os logs em STDOUT e STDERR. Para obter mais informações, veja [Criação de log do aplicativo de tempo de execução por meio de apps CF](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+Lastupdated: "2017-05-18"
 
 ---
 
@@ -17,8 +17,7 @@ lastupdated: "2017-03-16"
 # Coletando dados do log não padrão de um contêiner
 {: #logging_containers_collect_data}
 
-Para capturar dados de locais de log não padrão dentro de um contêiner, configure a variável de ambiente **LOG_LOCATIONS** ao criar um contêiner. 
-{:shortdesc}
+Para capturar dados de locais de log não padrão dentro de um contêiner que é implementado na infraestrutura em nuvem gerenciada pelo {{site.data.keyword.Bluemix_notm}}, configure a variável de ambiente **LOG_LOCATIONS** ao criar um contêiner.{:shortdesc}
 
 * Inclua a variável de ambiente **LOG_LOCATIONS** com um caminho para o arquivo de log quando criar o contêiner. 
 * É possível incluir múltiplos arquivos de log separando-os com vírgulas. 

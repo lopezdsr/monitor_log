@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -52,7 +52,7 @@ lastupdated: "2017-04-06"
 
 
 
-## Docker 容器的 Kibana 日志格式
+## 在 Bluemix 受管基础架构中部署的 Docker 容器的 Kibana 日志格式
 {: #kibana_log_format_containers}
 
 可以配置 Kibana 以在*发现*页面中显示每个日志条目的以下字段：
@@ -75,7 +75,39 @@ lastupdated: "2017-04-06"
 | stream | 指定日志的类型：stdout 或 stderr |
 | time | 事件发生时的日期和时间。时间戳记定义为精确到毫秒。|
 | timestamp | 所记录事件的日期和时间。时间戳记定义为精确到毫秒。 |
-{: caption="表 1. Docker 容器的字段" caption-side="top"}
+{: caption="表 2. Docker 容器的字段" caption-side="top"}
+
+## 在 Kubernetes 集群中部署的 Docker 容器的 Kibana 日志格式
+{: #kibana_log_format_containers_kubernetes}
+
+可以配置 Kibana 以在*发现*页面中显示每个日志条目的以下字段。
+这些字段由 {{site.data.keyword.IBM}} 设置且包含消息数据。 
+
+| 字段 | 描述 | 其他信息 |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-ddTHH:mm:ss:SS-0500`<br> 所记录事件的时间。<br> 时间戳记定义为精确到毫秒。 | |
+| @version | 事件的版本。 | |
+| ALCH_TENANT_ID | {{site.data.keyword.Bluemix_notm}} 空间的标识。 | |
+| \_id | 日志文档的唯一标识。 | |
+| \_index | 日志条目的索引。 | |
+| \_score |  |  |
+| \_type | 日志的类型；例如，*logs*。 | |
+| crn_str | 日志源的相关信息。 | 缺省情况下，此字段由 {{site.data.keyword.IBM_notm}} 设置。<br> **注**：如果您以有效的 JSON 格式发送日志消息，且其中一个字段命名为 `crn`，那么该字段的值会以消息中设置的值覆盖。  |  
+| docker.container_id_str | 在 Pod 中运行的容器的 GUID。 | |
+| ibm-containers.account_str | {{site.data.keyword.Bluemix_notm}} 帐户的 GUID。  |  |
+| ibm-containers.cluster_id_str | Kubernetes 集群的 GUID。  |  |
+| ibm-containers.cluster_type_str |  | 保留供 {{site.data.keyword.IBM_notm}} 内部使用的值。 |
+| ibm-containers.region_str | {{site.data.keyword.Bluemix_notm}} 中的区域。  |  |
+| kubernetes.container_name_str | 部署应用程序的容器名称。  |  |
+| kubernetes.host | 容器运行所在的工作程序的公共 IP 地址。 |  |
+| kubernetes.labels.*example_label_name*\_str | 附加到 Kubernetes 对象（如 Pod）的键值对。 | 附加到 Kubernetes 对象的每个标签都会作为 Kibana 中显示的日志条目中的字段列出。<br> 您可以具有 0 或更多标签	。 |
+| kubernetes.namespace_name_str | 部署容器的 Kubernetes 名称空间。 |  |
+| kubernetes.pod_id_str | 部署容器的 Pod 的 GUID。 |  |
+| kubernetes.pod_name_str | Pod 的名称。 |  |
+| message | 完整消息。 | 如果您发送有效的 JSON 格式的消息，那么系统将在 Kibana 中分别解析并显示每个字段。  |
+| stream_str |  | 保留供 {{site.data.keyword.IBM_notm}} 内部使用的值。 |
+|tag_str |  | 保留供 {{site.data.keyword.IBM_notm}} 内部使用的值。 |
+{: caption="表 3. Docker 容器的字段" caption-side="top"}
 
 
 ## Message Hub 的 Kibana 日志格式
@@ -94,7 +126,7 @@ lastupdated: "2017-04-06"
 | \_type | 日志的类型；例如，*syslog*。 |
 | loglevel | 所记录事件的严重性；例如，**Info**。 |
 | module | 此字段设置为 **MessageHub**。 |
-{: caption="表 1. Message Hub 事件的字段" caption-side="top"}
+{: caption="表 4. 用于消息中心事件的字段" caption-side="top"}
 
 日志条目的示例：
 

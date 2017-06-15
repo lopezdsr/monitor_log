@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Vous pouvez lancer Kibana en procédant de l'une des manières suivantes :
 
 * Depuis {{site.data.keyword.Bluemix_notm}}
 
-    Vous pouvez lancer vos journaux d'application CF spécifiques dans Kibana, dans le contexte de l'application concernée.
+    Vous pouvez lancer Kibana sur vos journaux d'application CF spécifiques et dans le contexte de cette application App.
     
-    Vous pouvez lancer vos journaux de conteneur Docker spécifiques dans Kibana, dans le contexte du conteneur concerné. 
+    Vous pouvez lancer Kibana sur vos journaux de conteneur Docker spécifiques et dans le contexte de ce conteneur. Cette fonctionnalité ne s'applique qu'aux conteneurs déployés dans l'infrastructure de cloud gérée par {{site.data.keyword.Bluemix_notm}}.
     
     Pour les applications CF, la requête utilisée pour filtrer les données disponibles pour analyse dans Kibana extrait les entrées de journal de l'application Cloud Foundry. Les informations de journal affichées par défaut par Kibana ne concernent qu'une application Cloud Foundry unique et toutes ses instances. 
     

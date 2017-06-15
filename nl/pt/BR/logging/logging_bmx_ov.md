@@ -48,7 +48,6 @@ O {{site.data.keyword.Bluemix_notm}} registra os dados do log que são gerados p
 [Criação de log para o IBM Bluemix
 Container Service](containers/logging_containers_ov.html#logging_containers_ov).
 
-**Nota:** é possível analisar os logs do contêiner em contêineres do {{site.data.keyword.Bluemix_notm}} for Docker que são implementados na infraestrutura em nuvem gerenciada pela {{site.data.keyword.IBM}}.
 
 ## Análise do log no Bluemix
 {: #logging_bmx_ov_ui}

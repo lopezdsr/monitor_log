@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Puede iniciar Kibana de cualquiera de estas formas:
 
 * Desde {{site.data.keyword.Bluemix_notm}}
 
-    Puede iniciar los registros específicos de la app CF en Kibana, en el contexto de la app específica.
+    Puede iniciar los registros específicos de la app CF en Kibana, dentro del contexto de la app específica.
     
-    Puede iniciar registros de un contenedor Docker específico en Kibana, en el contexto de dicho contenedor en concreto. 
+    Puede iniciar registros de un contenedor Docker específico en Kibana, dentro del contexto de dicho contenedor en concreto. Esta característica únicamente se aplica a contenedores desplegados en la infraestructura de nube gestionada de {{site.data.keyword.Bluemix_notm}}. 
     
     Para las apps CF, la consulta que se utiliza para filtrar los datos disponibles para análisis en Kibana recupera las entradas de registro de la aplicación Cloud Foundry. La información de registro que muestra Kibana de forma predeterminada está relacionada con una sola aplicación Cloud Foundry y todas sus instancias. 
     

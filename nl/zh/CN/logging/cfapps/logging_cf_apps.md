@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2017-04-06"
 
 下图显示了 {{site.data.keyword.Bluemix_notm}} 中 Cloud Foundry 应用程序的日志记录的高级别视图：
 
-![CF 应用程序的高级别组件概览图](../images/logging_cf_apps_ov.jpg "CF 应用程序的高级别组件概览图")
+![CF 应用程序的高级别组件概览图](../images/logging_cf_apps_ov.gif "CF 应用程序的高级别组件概览图")
  
 使用 Cloud Foundry 基础架构在 {{site.data.keyword.Bluemix_notm}} 上运行应用程序时，会自动启用 Cloud Foundry 应用程序的日志记录。要查看 Cloud Foundry 运行时日志，必须将日志写入 STDOUT 和 STDERR。有关更多信息，请参阅[通过 CF 应用程序进行运行时应用程序日志记录](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app)。
 

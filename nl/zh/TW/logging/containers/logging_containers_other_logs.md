@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # 收集容器中的非預設日誌資料
 {: #logging_containers_collect_data}
 
-若要擷取容器內非預設日誌位置中的資料，請在建立容器時，設定環境變數 **LOG_LOCATIONS**。
+若要擷取 {{site.data.keyword.Bluemix_notm}} 所管理雲端基礎架構中所部署容器內非預設日誌位置中的資料，請在建立容器時設定環境變數 **LOG_LOCATIONS**。
 {:shortdesc}
 
 * 在建立容器時，請新增 **LOG_LOCATIONS** 環境變數，並包含日誌檔的路徑。 

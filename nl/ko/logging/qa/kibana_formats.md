@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ lastupdated: "2017-04-06"
 
 
 
-## Docker 컨테이너의 Kibana 로그 형식
+## Bluemix 관리 인프라에 배치된 Docker 컨테이너의 Kibana 로그 형식
 {: #kibana_log_format_containers}
 
 *검색* 페이지에 각 로그 항목의 다음 필드를 표시하도록 Kibana를 구성할 수 있습니다. 
@@ -73,7 +73,38 @@ lastupdated: "2017-04-06"
 | stream | 로그의 유형을 지정합니다(stdout, stderr). |
 | time | 이벤트 발생 날짜 및 시간입니다. 시간소인은 밀리초 단위까지 정의됩니다. |
 | timestamp | 로깅된 이벤트의 날짜 및 시간입니다. 시간소인은 밀리초 단위까지 정의됩니다.  |
-{: caption="표 1. Docker 컨테이너의 필드" caption-side="top"}
+{: caption="표 2. Docker 컨테이너의 필드" caption-side="top"}
+
+## Kubernetes 클러스터에 배치된 Docker 컨테이너의 Kibana 로그 형식
+{: #kibana_log_format_containers_kubernetes}
+
+*검색* 페이지에서 각 로그 항목에 대해 다음 필드를 표시하도록 Kibana를 구성할 수 있습니다. 이러한 필드는 {{site.data.keyword.IBM}}에 의해 설정되며 메시지 데이터에 포함됩니다.  
+
+| 필드  | 설명 | 기타 정보 |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-ddTHH:mm:ss:SS-0500`  <br> 로그된 이벤트의 시간입니다. <br> 시간소인은 밀리초 단위까지 정의됩니다.  | |
+| @version | 이벤트의 버전입니다. | |
+| ALCH_TENANT_ID | {{site.data.keyword.Bluemix_notm}} 영역의 ID입니다. | |
+| \_id | 로그 문서의 고유 ID 입니다. | |
+| \_index | 로그 항목의 색인입니다. | |
+| \_score |  |  |
+| \_type | 로그의 유형(예: *logs*)입니다. | |
+| crn_str | 로그의 소스에 대한 정보입니다. | 기본적으로, 이 필드는 {{site.data.keyword.IBM_notm}}에 의해 설정됩니다. <br> **참고**: 로그 메시지를 유효한 JSON 형식으로 전송하며 필드 중 하나의 이름이 `crn`인 경우 이 필드의 값을 메시지에 설정된 값을 겹쳐씁니다.  |  
+| docker.container_id_str | 포드에서 실행 중인 컨테이너의 GUID입니다. | |
+| ibm-containers.account_str | {{site.data.keyword.Bluemix_notm}} 계정의 GUID입니다.  |  |
+| ibm-containers.cluster_id_str | Kubernetes 클러스터의 GUID입니다.  |  |
+| ibm-containers.cluster_type_str |  | {{site.data.keyword.IBM_notm}} 내부용으로 예약된 값입니다. |
+| ibm-containers.region_str | {{site.data.keyword.Bluemix_notm}}의 지역입니다.  |  |
+| kubernetes.container_name_str | 앱이 배치된 컨테이너의 이름입니다.  |  |
+| kubernetes.host | 컨테이너가 실행 중인 작업자의 공인 IP 주소입니다. |  |
+| kubernetes.labels.*example_label_name*\_str | 포드와 같은 Kubernetes 오브젝트에 연결하는 키-값 쌍입니다. | Kubernetes 오브젝트에 연결하는 각 레이블은 Kibana에서 표시되는 로그 항목에 필드로 나열됩니다. <br> 레이블은 0개 이상 보유할 수 있습니다. |
+| kubernetes.namespace_name_str | 컨테이너가 배치된 Kubernetes 네임스페이스입니다. |  |
+| kubernetes.pod_id_str | 컨테이너가 배치된 포드의 GUID입니다. |  |
+| kubernetes.pod_name_str | 포드의 이름입니다. |  |
+| message | 전체 메시지입니다. | 유효한 JSON 형식화된 메시지를 전송하는 경우 각 필드는 Kibana에서 개별적으로 구문 분석되어 표시됩니다.  |
+| stream_str |  | {{site.data.keyword.IBM_notm}} 내부용으로 예약된 값입니다. |
+|tag_str |  | {{site.data.keyword.IBM_notm}} 내부용으로 예약된 값입니다. |
+{: caption="표 3. Docker 컨테이너의 필드" caption-side="top"}
 
 
 ## Message Hub의 Kibana 로그 형식
@@ -91,7 +122,7 @@ lastupdated: "2017-04-06"
 | \_type | 로그 유형(예: *syslog*)입니다. |
 | loglevel | 로깅된 이벤트의 심각도입니다(예: **Info**). |
 | module | 이 필드는 **MessageHub**로 설정됩니다. |
-{: caption="표 1. 메시지 허브 이벤트의 필드" caption-side="top"}
+{: caption="표 4. 메시지 허브 이벤트의 필드" caption-side="top"}
 
 로그 항목의 예:
 

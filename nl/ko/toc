@@ -22,6 +22,10 @@
         monitoring/containers/monitoring_containers_ov.md
     
     {: .topicgroup}
+    튜토리얼
+        logging/containers/tutorials/kibana_tutorial_1.md
+    
+    {: .topicgroup}
     관련 링크
         [Kibana 자세히 보기](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}
         [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
@@ -31,7 +35,8 @@
     {: .navgroup id="howto"}
     logging/logging_view_dashboard.md
     logging/logging_view_cli.md
-    
+    monitoring/containers/analyzing_metrics_bmx_ui.md
+        
     {: .topicgroup}
     고급 로그 분석(Kibana)
         logging/kibana4/logging_kibana_analize_logs_interactively.md
@@ -51,9 +56,9 @@
         
     {: .topicgroup}
     Grafana
-        monitoring/grafana/monitoring_analyzing_metrics_grafana.md
-        monitoring/grafana/monitoring_grafana.md
-        
+        monitoring/grafana/navigating_grafana.md
+        monitoring/grafana/create_grafana_dashboard.md
+                
     {: .topicgroup}
     로그 분석(Kibana 3) 더 이상 사용되지 않음
         logging/logging_view_kibana3.md

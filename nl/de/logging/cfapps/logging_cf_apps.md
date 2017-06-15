@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Sie Ihre Apps in einer als Service bereitgestellten Cloudplattform (Platfor
 
 Die folgende Abbildung zeigt eine Übersicht über die Protokollierung von Cloud Foundry-Apps in {{site.data.keyword.Bluemix_notm}}:
 
-![Allgemeine Übersicht über die Komponenten für CF-Apps](../images/logging_cf_apps_ov.jpg "Allgemeine Übersicht über die Komponenten für CF-Apps")
+![Allgemeine Übersicht über die Komponenten für CF-Apps](../images/logging_cf_apps_ov.gif "Allgemeine Übersicht über die Komponenten für CF-Apps")
  
 Die Protokollierung von Cloud Foundry-Apps ist automatisch aktiviert, wenn Sie die Cloud Foundry-Infrastruktur zur Ausführung Ihrer Apps in {{site.data.keyword.Bluemix_notm}} verwenden. Wenn Sie Cloud Foundry-Laufzeitprotokolle anzeigen möchten, müssen Sie Ihre Protokolle in die Standardausgabe (STDOUT) und Standard-Fehlerausgabe (STDERR) schreiben. Weitere Informationen finden Sie unter [Laufzeitanwendungsprotokollierung durch CF-Apps](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
 

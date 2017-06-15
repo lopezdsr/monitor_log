@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2017-04-06"
 有关更多信息，请参阅[通过 CLI 分析 CF 应用程序日志](logging_view_cli.html#analyzing_cf_logs_cli)。
 
 要分析 Docker 容器日志，请使用以下命令：`cf ic logs`
-有关更多信息，请参阅[通过 CLI 分析 Docker 容器日志](logging_view_cli.html#analyzing_container_logs_cli)。
+有关更多信息，请参阅[通过 CLI 分析 Docker 容器日志](logging_view_cli.html#analyzing_container_logs_cli)。此功能仅适用于在 {{site.data.keyword.Bluemix_notm}} 受管云基础架构中部署的容器。
 
 
 ## 通过 CLI 分析 CF 应用程序日志
@@ -129,6 +129,8 @@ lastupdated: "2017-04-06"
 
 ## 通过 CLI 分析 Docker 容器日志
 {: #analyzing_container_logs_cli}
+
+**注：**此功能仅适用于在 {{site.data.keyword.Bluemix_notm}} 受管云基础架构中部署的容器。
 
 使用 `cf ic logs` 命令来显示 {{site.data.keyword.Bluemix_notm}} 中容器的日志。例如，可以使用日志来分析容器停止的原因或用于查看容器输出。 
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-03-07"
 In diesem Abschnitt finden Sie die Antworten auf häufige Fragen zu Protokollfunktionen von {{site.data.keyword.Bluemix}}. {:shortdesc}
 
 * [Was kann ich tun, wenn keine Daten auf der Seite 'Discover' in Kibana angezeigt werden?](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [Was kann ich tun, wenn eine Authentifizierungsausnahmebedingung auftritt?](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [Wie kann ich Kibana 3 starten?](logging_qa_kibana.html#logging_qa_kibana3)
+* [Warum wird das Symbol '?' in Feldern auf der Kibana-Seite 'Discover' angezeigt?](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## Was kann ich tun, wenn keine Daten auf der Seite 'Discover' in Kibana angezeigt werden?
 {: #logging_qa_no_data_discover_kibana}
@@ -72,5 +72,27 @@ Führen Sie die folgenden Schritte aus, um dieses Problem zu beheben:
 3. Erstellen Sie eine neue Seite 'Dashboard', die die Visualisierungen ausschließt, für die Sie keine Berechtigungen haben, während Ihnen der Zugriff zum Anzeigen der Daten in den Visualisierungen erteilt wird, die das Problem verursachen. 
 
     Wenn Sie das Dashboard mit anderen gemeinsam nutzen, löschen Sie keine Visualisierungen, da dies sich auch auf andere Teammitglieder auswirkt, die das betreffende Dashboard verwenden.
+
+## Wie kann ich Kibana 3 starten?
+{: #logging_qa_kibana3}
+
+**Hinweis:** Kibana 3 ist veraltet.
+
+Sie können Kibana 3 über einen Browser starten.
+
+Führen Sie den folgenden Schritt aus, um Kibana 3 in einem Browser zu starten:
+
+1. Öffnen Sie [https://logmet.<span class="keyword" data-hd-keyref="DomainName">Domänenname</span>](https://logmet.{DomainName}), um sich bei der Kibana-Benutzerschnittstelle anzumelden.
+    
+2. Wählen Sie die Version von Kibana aus, die Sie zur Analyse Ihrer Protokolle verwenden wollen.
+    * Wählen Sie die Registerkarte **Kibana 4** aus, um mit Kibana 4 zu arbeiten. Die Seite 'Discover' wird geöffnet. Weitere Informationen finden Sie unter [logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively).
+    * Wählen Sie die Registerkarte **Kibana 3** aus, um mit Kibana 3 zu arbeiten. Das Kibana-Standarddashboard wird geöffnet. Informationen zur Verwendung von Kibana 3 zur Analyse Ihrer Protokolle finden Sie unter [Protokolle in Kibana 3 analysieren (veraltet)](../logging_view_kibana3.html#analyzing_logs_Kibana3). Weitere Informationen zur Anpassung eines Kibana 3-Dashboards finden Sie [in diesem Blogbeitrag ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/).
+     
+
+## Warum wird das Symbol '?' neben Feldern auf der Kibana-Seite 'Discover' angezeigt?
+{: #logging_qa_kibana_question}
+
+Wenn Sie die Seite 'Discover' in Kibana öffnen, wird neben den Feldern, die im Abschnitt für verfügbare Felder aufgeführt sind, ein `?` anstelle des Zeichens `t` angezeigt. Beim erneuten Laden der Feldliste wird der Typ der Felder analysiert und das `?` durch das Zeichen `t` ersetzt. Weitere Informationen finden Sie unter [Feldliste erneut laden](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields).
+
 
 

@@ -34,7 +34,7 @@ Cloud Foundry アプリは、Cloud Foundry Loggregator を使用して、アプ�
 vCPU | 19 | 57 |
 メモリー | 80 GB | 240 GB |
 ローカル・ストレージ | 2.98 TB | 8.94 TB |
-{: caption="表 1.  {{site.data.keyword.Bluemix_local_notm:}}" caption-side="top"} のロギングのハードウェア要件
+{: caption="表 1. {{site.data.keyword.Bluemix_local_notm:}} のロギングのハードウェア要件" caption-side="top"}
 
 ## セットアップ
 

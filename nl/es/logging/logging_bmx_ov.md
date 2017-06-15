@@ -46,7 +46,6 @@ Con la función de registro que proporciona {{site.data.keyword.Bluemix_notm}}, 
 
 {{site.data.keyword.Bluemix_notm}} registra los datos de registro que genera {{site.data.keyword.containershort}}. Para obtener más información sobre el registro en {{site.data.keyword.containershort}}, consulte [Registro correspondiente al servicio IBM Bluemix Container](containers/logging_containers_ov.html#logging_containers_ov).  
 
-**Nota:** Tiene la posibilidad de analizar los registros de contenedores Docker en {{site.data.keyword.Bluemix_notm}} que se despliegan en la infraestructura de nube gestionada de {{site.data.keyword.IBM}}.
 
 ## Análisis de registro en Bluemix
 {: #logging_bmx_ov_ui}

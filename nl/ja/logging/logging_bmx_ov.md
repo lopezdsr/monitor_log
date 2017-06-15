@@ -47,7 +47,6 @@ FTP を使用できないことがあります (例えば、アプリケーシ�
 
 {{site.data.keyword.Bluemix_notm}} は、{{site.data.keyword.containershort}} によって生成されるログ・データを記録します。{{site.data.keyword.containershort}} でのロギングについて詳しくは、『[IBM Bluemix Container Service のロギング](containers/logging_containers_ov.html#logging_containers_ov)』を参照してください。  
 
-**注:** {{site.data.keyword.IBM}} 管理のクラウド・インフラストラクチャーにデプロイされている Docker コンテナーのコンテナー・ログは {{site.data.keyword.Bluemix_notm}} で分析できます。
 
 ## Bluemix でのログ分析
 {: #logging_bmx_ov_ui}

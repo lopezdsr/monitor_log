@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -23,7 +23,7 @@ CF(Cloud Foundry) 애플리케이션 로그를 분석하려면 `cf logs` 명령�
 자세한 정보는 [CLI에서 CF 앱 로그 분석](logging_view_cli.html#analyzing_cf_logs_cli)을 참조하십시오.
 
 Docker 컨테이너 로그를 분석하려면 `cf ic logs` 명령을 사용하십시오.
-자세한 정보는 [CLI에서 Docker 컨테이너 로그 분석](logging_view_cli.html#analyzing_container_logs_cli)을 참조하십시오.
+자세한 정보는 [CLI에서 Docker 컨테이너 로그 분석](logging_view_cli.html#analyzing_container_logs_cli)을 참조하십시오. 이 기능은 {{site.data.keyword.Bluemix_notm}} 관리 클라우드 인프라에 배치된 컨테이너에만 적용됩니다. 
 
 
 ## CLI에서 CF 앱 로그 분석
@@ -134,6 +134,8 @@ Cloud Foundry 애플리케이션을 {{site.data.keyword.Bluemix}}에 배치한 �
 
 ## CLI에서 Docker 컨테이너 로그 분석
 {: #analyzing_container_logs_cli}
+
+**참고:** 이 기능은 {{site.data.keyword.Bluemix_notm}} 관리 클라우드 인프라에 배치된 컨테이너에만 적용됩니다. 
 
 `cf ic logs` 명령을 사용하여 {{site.data.keyword.Bluemix_notm}}의 컨테이너에서 로그를 표시하십시오. 예를 들어 로그를 사용하여 컨테이너가 중지된 이유를 분석하고 컨테이너 출력을 검토할 수 있습니다. 
 

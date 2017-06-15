@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-03-07"
 以下是關於使用 {{site.data.keyword.Bluemix}} 記載功能的常見問題與解答。{:shortdesc}
 
 * [如果在 Kibana 的「探索」頁面中看不到資料，我該怎麼辦](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [如果發生鑑別異常狀況，我該怎麼辦](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [如何啟動 Kibana 3](logging_qa_kibana.html#logging_qa_kibana3)
+* [為什麼會在 Kibana「探索」頁面中的欄位中看到符號 ?](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## 如果在 Kibana 的「探索」頁面中看不到資料，我該怎麼辦
 {: #logging_qa_no_data_discover_kibana}
@@ -71,5 +71,27 @@ lastupdated: "2017-03-07"
 3. 建立新的「儀表板」頁面，排除您沒有許可權的視覺化，但您有權查看造成問題之視覺化中的資料。 
 
     如果您共用該「儀表板」，請勿刪除視覺化，因為那樣會影響其他使用相同儀表板的團隊成員。
+
+## 如何啟動 Kibana 3
+{: #logging_qa_kibana3}
+
+**附註：**Kibana 3 已被淘汰。
+
+您可以從瀏覽器啟動 Kibana 3。
+
+請完成下列步驟，以從瀏覽器啟動 Kibana 3：
+
+1. 開啟 [https://logmet.<span class="keyword" data-hd-keyref="DomainName">DomainName</span>](https://logmet.{DomainName})，以登入 Kibana 使用者介面。
+    
+2. 選取您要用來分析日誌的 Kibana 版本。
+    * 選取 **Kibana 4** 標籤，以使用 Kibana 4。「探索」頁面即會開啟。如需相關資訊，請參閱 [在 Kibana 中以互動方式分析日誌](logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively)。
+    * 選取 **Kibana 3** 標籤，以使用 Kibana 3。預設的 Kibana 儀表板即會開啟。如需使用 Kibana 3 來分析日誌的相關資訊，請參閱[在 Kibana 3（已淘汰）中分析日誌](../logging_view_kibana3.html#analyzing_logs_Kibana3)。如需自訂 Kibana 3 儀表板的相關資訊，請參閱[此部落格文章 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/)。
+     
+
+## 為什麼會在 Kibana「探索」頁面中的欄位中看到符號 ?
+{: #logging_qa_kibana_question}
+
+當您在 Kibana 中開啟「探索」頁面時，可能會在可用欄位區段中所列的欄位中看到 `?`，而不是字元 `t`。當您重新載入欄位清單時，會分析欄位類型，並將 `?` 取代為字元 `t`。如需相關資訊，請參閱[重新載入欄位清單](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)。
+
 
 

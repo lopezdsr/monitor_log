@@ -46,7 +46,6 @@ lastupdated: "2017-03-29"
 
 {{site.data.keyword.Bluemix_notm}}는 {{site.data.keyword.containershort}}에서 생성된 로그 데이터를 기록합니다. {{site.data.keyword.containershort}}의 로깅에 대한 자세한 정보는 [IBM Bluemix 컨테이너 서비스의 로깅](containers/logging_containers_ov.html#logging_containers_ov)을 참조하십시오.  
 
-**참고:** {{site.data.keyword.IBM}} 관리 클라우드 인프라에 배치된 Docker 컨테이너의 {{site.data.keyword.Bluemix_notm}}에서 컨테이너 로그를 분석할 수 있습니다.
 
 ## Bluemix의 로그 분석
 {: #logging_bmx_ov_ui}

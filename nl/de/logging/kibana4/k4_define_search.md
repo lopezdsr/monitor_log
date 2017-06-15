@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,18 +21,21 @@ In der Suchleiste der Seite 'Discover' können Sie Suchabfragen in der Abfragesp
 
 Führen Sie die folgenden Tasks aus, um eine angepasste Suche zu definieren:
 
-1. Greifen Sie auf die Registerkarte **Protokolle** Ihrer Cloud Foundry-App (CF-App) oder Ihres Containers zu. 
+1. Starten Sie Kibana.
 
-    1. Klicken Sie auf den App-Namen oder Container im {{site.data.keyword.Bluemix}}-Dashboard.
-    2. Klicken Sie für CF-Anwendungen auf die Registerkarte **Protokolle**. Klicken Sie für Container auf **Überwachung und Protokolle** und wählen Sie anschließend die Registerkarte **Protokollierung** aus.
+    Für Cloud Foundry- (CF-) Apps oder Container, die in der {{site.data.keyword.Bluemix}}-verwalteten Cloudinfrastruktur ausgeführt werden, führen Sie folgende Schritte aus:
     
-    Die Protokolle werden angezeigt.
+    1. Greifen Sie auf die Registerkarte **Protokolle** Ihrer Cloud Foundry-App (CF-App) oder Ihres Containers zu. 
 
-2. Greifen Sie auf Kibana zu. Klicken Sie auf **Erweiterte Ansicht** ![Link für erweiterte Ansicht](images/logging_advanced_view.jpg "Link für Erweiterte Ansicht"). Das Kibana-Dashboard wird angezeigt.
+        Klicken Sie auf den App-Namen oder Container im {{site.data.keyword.Bluemix_notm}}-Dashboard. Bei CF-Anwendungen klicken Sie anschließend auf die Registerkarte **Protokolle**; bei Containern klicken Sie auf **Überwachung und Protokolle** und wählen anschließend die Registerkarte **Protokollierung** aus. Die Protokolle werden angezeigt.
 
+    2. Greifen Sie auf Kibana zu. Klicken Sie auf **Erweiterte Ansicht** ![Link für erweiterte Ansicht](images/logging_advanced_view.jpg "Link für Erweiterte Ansicht"). Das Kibana-Dashboard wird angezeigt.
+    
+    Bei Containern, die in einem Kubernetes-Cluster ausgeführt werden, [starten Sie Kibana vom Browser aus](k4_launch.html#launch_Kibana_from_browser). 
+    
     Wenn Sie auf Kibana zugreifen, wird die Standardsuche angewendet. Die Protokolle für die Liste der Instanzen der Ressource wird angezeigt, für die Sie Kibana gestartet haben. Sie können die Protokolle nach beliebigen oder allen {{site.data.keyword.Bluemix_notm}}-Ressourcen in dem jeweiligen Bereich filtern.
 
-3. Schauen Sie sich die Seite 'Discover' an, um festzustellen, welche Untergruppe Ihrer Daten dort angezeigt wird. Weitere Informationen finden Sie unter [Auf der Kibana-Seite 'Discover' angezeigte Daten ermitteln](logging_kibana_analize_logs_interactively.html#k4_identify_data). Ändern Sie anschließend die Standardabfrage, um Einträge zu filtern.
+2. Schauen Sie sich die Seite 'Discover' an, um festzustellen, welche Untergruppe Ihrer Daten dort angezeigt wird. Weitere Informationen finden Sie unter [Auf der Kibana-Seite 'Discover' angezeigte Daten ermitteln](logging_kibana_analize_logs_interactively.html#k4_identify_data). Ändern Sie anschließend die Standardabfrage, um Einträge zu filtern.
 
     **Hinweis:** Verwenden Sie die Abfragesprache Lucene zum Definieren Ihrer angepassten Abfrage. Weitere Informationen finden Sie unter [Apache Lucene - Query Parser Syntax  ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}.
     
@@ -46,7 +49,7 @@ Führen Sie die folgenden Tasks aus, um eine angepasste Suche zu definieren:
 
      Beispiel: Für eine CF-App können Sie eine Abfrage wie `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` erstellen, die nur Einträge für Instanzen *0* und *1* auflistet. 
 
-4. Speichern Sie die Abfrage, sodass Sie sie später wiederverwenden können. Weitere Informationen finden Sie unter [Suche speichern](logging_kibana_filtering_logs.html#k4_save_search). 
+3. Speichern Sie die Abfrage, sodass Sie sie später wiederverwenden können. Weitere Informationen finden Sie unter [Suche speichern](logging_kibana_filtering_logs.html#k4_save_search). 
 
 **Hinweis:** Wenn Sie eine Abfrage löschen müssen, finden Sie weitere Informationen unter [Suche löschen](logging_kibana_filtering_logs.html#k4_delete_search).
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Sie können Kibana auf eine beliebige der folgenden Arten starten:
 
 * Über {{site.data.keyword.Bluemix_notm}}
 
-    Sie können Ihre CF-App-Protokolle in Kibana im Kontext der jeweiligen App starten.
+    Sie können Ihre spezifischen CF-App-Protokolle in Kibana im Kontext dieser spezifischen App starten.
     
-    Sie können Ihre bestimmten Docker-Container-Protokolle in Kibana im Kontext des jeweiligen Containers starten. 
+    Sie können Ihre spezifischen Docker-Container-Protokolle in Kibana im Kontext dieses spezifischen Containers starten. Dieses Feature gilt nur für Container, die in der {{site.data.keyword.Bluemix_notm}}-verwalteten Cloudinfrastruktur bereitgestellt werden.
     
     Für CF-Apps ruft die Abfrage, die zum Filtern der für die Analyse in Kibana verfügbaren Daten verwendet wird, Protokolleinträge für die Cloud Foundry-Anwendung ab. Die Protokollinformationen, die standardmäßig in Kibana angezeigt werden, beziehen sich sämtlich auf eine einzelne Cloud Foundry-Anwendung und alle zugehörigen Instanzen. 
     

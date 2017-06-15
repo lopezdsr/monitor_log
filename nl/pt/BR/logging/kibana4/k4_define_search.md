@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+Lastupdated: "2017-05-22"
 
 ---
 
@@ -23,22 +23,23 @@ entradas que estiverem disponíveis para análise.
 
 Conclua as tarefas a seguir para definir uma procura customizada:
 
-1. Acesse a guia **Logs** de seu app ou contêiner Cloud Foundry (CF). 
+1. Ativar Kibana.
 
-    1. Clique no nome ou no contêiner do app no painel do {{site.data.keyword.Bluemix}}.
-    2. Para aplicativos CF, clique na guia **Logs**. Para contêineres, clique em
-**Monitoramento e logs** e, em seguida, selecione a guia **Criação de
-log**.
+    Para apps ou contêineres Cloud Foundry (CF) que são executados na infraestrutura em nuvem gerenciada pelo {{site.data.keyword.Bluemix}}, conclua as etapas a seguir:
     
-    Os logs são exibidos.
+    1. Acesse a guia **Logs** de seu app ou contêiner Cloud Foundry (CF). 
 
-2. Acesse o Kibana. Clique em **Visualização avançada** ![Link da visualização avançada](images/logging_advanced_view.jpg "Link da visualização avançada"). O painel do Kibana é exibido.
+        Clique no nome ou no contêiner do app no painel do {{site.data.keyword.Bluemix_notm}}. Em seguida, para apps CF, clique na guia **Logs**; para contêineres, clique em **Monitoramento e logs**, em seguida, selecione a guia **Log**. Os logs são exibidos.
 
+    2. Acesse o Kibana. Clique em **Visualização avançada** ![Link da visualização avançada](images/logging_advanced_view.jpg "Link da visualização avançada"). O painel do Kibana é exibido.
+    
+    Para contêineres que são executados em um cluster do Kubernetes, [ative o Kibana por meio do navegador](k4_launch.html#launch_Kibana_from_browser). 
+    
     Ao acessar o Kibana, a procura padrão é aplicada. É possível ver os logs para a lista de instâncias
 do recurso para o qual você ativou o Kibana. É possível filtrar os logs para quaisquer ou todos os
 recursos do {{site.data.keyword.Bluemix_notm}} nesse espaço.
 
-3. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais
+2. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais
 informações, consulte
 [Identificando os dados que são
 exibidos em sua página Descobrir do Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data). Em seguida, modifique a consulta padrão para
@@ -66,8 +67,8 @@ formato a seguir: *log_field_name:[start_of_range TO end_of_range]*; por exemplo
 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` que
 liste somente as entradas para as instâncias *0* e *1*. 
 
-4. Salve a consulta para poder reutilizá-la posteriormente. Para obter mais informações, consulte
-[Salvando uma procura](logging_kibana_filtering_logs.html#k4_save_search). 
+3. Salve a consulta para poder reutilizá-la posteriormente. Para obter mais
+informações, consulte [Salvando uma procura](logging_kibana_filtering_logs.html#k4_save_search). 
 
 **Nota:** se precisar excluir uma consulta, consulte
 [Excluindo uma procura](logging_kibana_filtering_logs.html#k4_delete_search).

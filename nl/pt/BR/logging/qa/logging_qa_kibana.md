@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+Lastupdated: "2017-05-22"
 
 ---
 
@@ -22,10 +22,10 @@ do {{site.data.keyword.Bluemix}}. {:shortdesc}
 
 * [O que poderei fazer se eu não conseguir ver
 os dados na página Descobrir no Kibana?](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [O que poderei fazer se eu receber uma
 exceção de autenticação?](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [Como ativar Kibana 3](logging_qa_kibana.html#logging_qa_kibana3)
+* [Por que eu vejo o símbolo? por campos na página Descobrir do Kibana](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## O que poderei fazer se eu não conseguir ver os dados na página Descobrir no Kibana?
 {: #logging_qa_no_data_discover_kibana}
@@ -95,5 +95,27 @@ recebe acesso para ver dados nas visualizações que estiverem causando o proble
 
     Se você compartilhar o Painel, não exclua as visualizações, já que isso afetará outros membros da
 equipe que usam o mesmo painel.
+
+## Como ativar Kibana 3
+{: #logging_qa_kibana3}
+
+**Nota**: o Kibana 3 foi descontinuado.
+
+É possível ativar o Kibana 3 por meio de um navegador.
+
+Conclua a etapa a seguir para ativar o Kibana 3 por meio de um navegador:
+
+1. Abra [https://logmet.<span class="keyword" data-hd-keyref="DomainName">DomainName</span>](https://logmet.{DomainName}) para efetuar login na interface com o usuário do Kibana.
+    
+2. Selecione a versão do Kibana que deseja usar para analisar seus logs.
+    * Selecione a guia **Kibana 4** para trabalhar com o Kibana 4. A página Descobrir se abre. Para obter mais informações, consulte [logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively).
+    * Selecione a guia **Kibana 3** para trabalhar com o Kibana 3. O painel do Kibana padrão é aberto. Para obter informações sobre como usar o Kibana 3 para analisar seus logs, consulte [Analisando logs no Kibana 3 (descontinuado)](../logging_view_kibana3.html#analyzing_logs_Kibana3). Para obter mais informações sobre como customizar um painel do Kibana 3, veja [esta postagem do blog ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/).
+     
+
+## Por que eu vejo o símbolo? por campos na página Descobrir do Kibana
+{: #logging_qa_kibana_question}
+
+Ao abrir a página Descobrir no Kibana, você poderá ver um `?` por campos que são listados na seção de campos disponíveis em vez do caractere `t`. Quando você recarrega a lista de campos, o tipo de campo é analisado e o `?` é substituído pelo caractere `t`. Para obter mais informações, veja [Recarregando a lista de campos](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields).
+
 
 

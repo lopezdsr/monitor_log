@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2017-04-06"
 
 下圖顯示在 {{site.data.keyword.Bluemix_notm}} 中記載 Cloud Foundry 應用程式的高階視圖：
 
-![CF 應用程式的高階元件概觀](../images/logging_cf_apps_ov.jpg "CF 應用程式的高階元件概觀")
+![CF 應用程式的高階元件概觀](../images/logging_cf_apps_ov.gif "CF 應用程式的高階元件概觀")
  
 當您在 {{site.data.keyword.Bluemix_notm}} 上使用 Cloud Foundry 基礎架構來執行應用程式時，會自動啟用 Cloud Foundry 應用程式的記載功能。若要檢視 Cloud Foundry 運行環境日誌，您必須將日誌寫入 STDOUT 和 STDERR。如需相關資訊，請參閱[透過 CF 應用程式的運行環境應用程式記載](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app)。
 

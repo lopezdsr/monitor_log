@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2017-04-06"
 
 다음 그림은 {{site.data.keyword.Bluemix_notm}}에서 Cloud Foundry 앱 로깅에 대한 상위 레벨 보기를 표시합니다.
 
-![CF 앱의 상위 레벨 컴포넌트 개요](../images/logging_cf_apps_ov.jpg "CF 앱의 상위 레벨 컴포넌트 개요")
+![CF 앱의 상위 레벨 컴포넌트 개요](../images/logging_cf_apps_ov.gif "CF 앱의 상위 레벨 컴포넌트 개요")
  
 Cloud Foundry 인프라를 사용하여 {{site.data.keyword.Bluemix_notm}}에서 앱을 실행하는 경우 Cloud Foundry 앱 로깅이 자동으로 사용됩니다. Cloud Foundry 런타임 로그를 보려면 STDOUT 및 STDERR에 로그를 기록해야 합니다. 자세한 정보는 [CF 앱을 통한 런타임 애플리케이션 로깅](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app)을 참조하십시오.
 

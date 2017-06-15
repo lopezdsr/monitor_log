@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ Cuando ejecuta sus apps en una plataforma como servicio (PaaS) de nube como Clou
 
 En la figura siguiente se muestra una vista de nivel alto del registro de las apps de Cloud Foundry en {{site.data.keyword.Bluemix_notm}}:
 
-![Visión general de componentes de alto nivel para apps de CF](../images/logging_cf_apps_ov.jpg "Visión general de comonentes de alto nivel para apps de CF")
+![Visión general de componentes de alto nivel para apps de CF](../images/logging_cf_apps_ov.gif "Visión general de comonentes de alto nivel para apps de CF")
  
 El registro de apps de Cloud Foundry se habilita automáticamente cuando se utiliza la infraestructura de Cloud Foundry para ejecutar las apps en {{site.data.keyword.Bluemix_notm}}. Para ver los registros de tiempo de ejecución de Cloud Foundry, debe grabar los registros en STDOUT y STDERR. Para obtener más información, consulte [Registro de aplicaciones en tiempo de ejecución mediante apps CF](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
 

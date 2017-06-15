@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Kibana에는 로그를 분석하는 데 사용할 수 있는 다른 페이지가
 
 * {{site.data.keyword.Bluemix_notm}}에서 다음을 수행할 수 있습니다.
 
-    Kibana에서 특정 앱에 대한 컨텍스트로 특정 CF앱 로그를 시작할 수 있습니다.
+    Kibana에서 특정 앱의 컨텍스트로 특정 CF 앱 로그를 시작할 수 있습니다. 
     
-    Kibana에서 특정 컨테이너에 대한 컨텍스트로 특정 Docker 컨테이너 로그를 시작할 수 있습니다. 
+    Kibana에서 특정 컨테이너의 컨텍스트로 특정 Docker 컨테이너 로그를 시작할 수 있습니다. 이 기능은 {{site.data.keyword.Bluemix_notm}} 관리 클라우드 인프라에 배치된 컨테이너에만 적용됩니다. 
     
     CF 앱의 경우 Kibana에서 분석에 사용 가능한 데이터를 필터링하는 데 사용하는 조회를 통해 Cloud Foundry 애플리케이션의 로그 항목을 검색합니다. Kibana가 기본적으로 표시하는 로그 정보는 단일 Cloud Foundry 애플리케이션 및 모든 해당 인스턴스와 관련되어 있습니다. 
     

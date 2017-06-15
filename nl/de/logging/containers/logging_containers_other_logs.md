@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # Vom Standard abweichende Protokolldaten aus einem Container erfassen
 {: #logging_containers_collect_data}
 
-Wenn Sie Daten aus anderen Protokollpositionen als den Standardpositionen in einem Container erfassen wollen, legen Sie die Umgebungsvariable **LOG_LOCATIONS** beim Erstellen eines Containers fest. 
+Zur Erfassung von Daten aus nicht standardmäßigen Protokollpositionen innerhalb eines Containers, der in der {{site.data.keyword.Bluemix_notm}}-verwalteten Cloud-Infrastruktur bereitgestellt wird, setzen Sie die Umgebungsvariable auf **LOG_LOCATIONS**, wenn Sie einen Container erstellen.
 {:shortdesc}
 
 * Fügen Sie die Umgebungsvariable **LOG_LOCATIONS** mit einem Pfad zur Protokolldatei hinzu, wenn Sie den Container erstellen. 

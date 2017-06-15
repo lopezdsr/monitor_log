@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -23,7 +23,7 @@ Zur Analyse von CF-Anwendungsprotokollen (CF - Cloud Foundry) verwenden Sie den 
 Weitere Informationen finden Sie unter [Cloud Foundry-App-Protokolle über die Befehlszeilenschnittstelle (CLI) analysieren](logging_view_cli.html#analyzing_cf_logs_cli).
 
 Zur Analyse von Docker-Container-Protokollen verwenden Sie den folgenden Befehl: `cf ic logs`.
-Weitere Informationen finden Sie unter [Docker-Container-Protokollen über die Befehlszeilenschnittstelle (CLI) analysieren](logging_view_cli.html#analyzing_container_logs_cli).
+Weitere Informationen finden Sie unter [Docker-Container-Protokollen über die Befehlszeilenschnittstelle (CLI) analysieren](logging_view_cli.html#analyzing_container_logs_cli). Dieses Feature gilt nur für Container, die in der {{site.data.keyword.Bluemix_notm}}-verwalteten Cloudinfrastruktur bereitgestellt werden.
 
 
 ## Cloud Foundry-App-Protokolle über die Befehlszeilenschnittstelle (CLI) analysieren
@@ -124,6 +124,8 @@ Geben Sie den folgenden Befehl ein, um dieses Protokoll anzuzeigen: `cf files Ap
 
 ## Docker-Container-Protokollen über die Befehlszeilenschnittstelle (CLI) analysieren
 {: #analyzing_container_logs_cli}
+
+**Hinweis:** Dieses Feature gilt nur für Container, die in der {{site.data.keyword.Bluemix_notm}}-verwalteten Cloudinfrastruktur bereitgestellt werden.
 
 Verwenden Sie den Befehl `cf ic logs`, um Protokolle aus einem Container in {{site.data.keyword.Bluemix_notm}} zu analysieren. Sie können die Protokolle zum Beispiel dazu verwenden, die Ursache für das Stoppen eines Containers zu analysieren oder die Containerausgabe zu prüfen. 
 

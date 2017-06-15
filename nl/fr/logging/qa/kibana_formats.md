@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ Vous pouvez configurer Kibana pour afficher sur la page *Discover* les zones sui
 
 
 
-## Format de journal Kibana pour les conteneurs Docker
+## Formats de journal Kibana pour les conteneurs Docker déployés dans une infrastructure gérée par Bluemix
 {: #kibana_log_format_containers}
 
 Vous pouvez configurer Kibana pour afficher sur la page *Discover* les zones suivantes pour chaque entrée de journal :
@@ -73,7 +73,39 @@ Vous pouvez configurer Kibana pour afficher sur la page *Discover* les zones sui
 | stream | Spécifie le type de journal : stdout, stderr |
 | time | Date et heure à laquelle l'événement s'est produit. L'horodatage est défini à la milliseconde près.|
 | timestamp | Date et heure de consignation de l'événement. L'horodatage est défini à la milliseconde près. |
-{: caption="Tableau 1. Zones des conteneurs Docker" caption-side="top"}
+{: caption="Tableau 2. Zones pour les conteneurs Docker" caption-side="top"}
+
+## Format de journal Kibana pour les conteneurs Docker déployés dans un cluster Kubernetes
+{: #kibana_log_format_containers_kubernetes}
+
+Vous pouvez configurer Kibana pour afficher sur la page *Discover* les zones suivantes pour chaque entrée de journal.
+Des zones sont définies par {{site.data.keyword.IBM}} et incluent vos données de message. 
+
+| Zone | Description | Autres informations |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-jjTHH:mm:ss:SS-0500`  <br> Heure à laquelle l'événement a été consigné. <br> L'horodatage est défini à la milliseconde près. | |
+| @version | Version de l'événement. | |
+| ALCH_TENANT_ID | ID de l'espace {{site.data.keyword.Bluemix_notm}}. | |
+| \_id | ID unique de votre document de journal. | |
+| \_index | Index de votre entrée de journal. | |
+| \_score |  |  |
+| \_type | Type de journal. Par exemple, *logs*. | |
+| crn_str | Informations sur la source du journal. | Par défaut, cette zone est définie par {{site.data.keyword.IBM_notm}}. <br> **Remarque **: si vous envoyez le message sous un format JSON valide et que l'une des zones est nommée `crn`, la valeur de la zone est remplacée par celle définie dans le message.  |  
+| docker.container_id_str | Identificateur global unique du conteneur s'exécutant dans une nacelle. | |
+| ibm-containers.account_str | Identificateur global unique du compte {{site.data.keyword.Bluemix_notm}}.  |  |
+| ibm-containers.cluster_id_str | Identificateur global unique du cluster Kubernetes.  |  |
+| ibm-containers.cluster_type_str |  | Valeur réservée pour utilisation interne {{site.data.keyword.IBM_notm}}. |
+| ibm-containers.region_str | Région dans {{site.data.keyword.Bluemix_notm}}.  |  |
+| kubernetes.container_name_str | Nom du conteneur dans lequel une application est déployée.  |  |
+| kubernetes.host | Adresse IP publique de l'agent sur lequel le conteneur s'exécute. |  |
+| kubernetes.labels.*exemple_nom_libellé*\_str | Paire clé-valeur associée à un objet Kubernetes tel qu'une nacelle. | Chaque libellé associé à un objet Kubernetes est répertoriée sous forme de zone dans l'entrée de journal affichée dans Kibana. <br> Vous pouvez ne pas utiliser de libellés ou en utiliser plusieurs.  |
+| kubernetes.namespace_name_str | Espace de nom Kubernetes où le conteneur est déployé. |  |
+| kubernetes.pod_id_str | Identificateur global unique de la nacelle où le conteneur est déployé. |  |
+| kubernetes.pod_name_str | Nom de la nacelle. |  |
+| message | Message complet. | Si vous envoyez un message avec un format JSON valide, chaque zone est analysée individuellement et affichée dans Kibana.  |
+| stream_str |  | Valeur réservée pour utilisation interne {{site.data.keyword.IBM_notm}}. |
+|tag_str |  | Valeur réservée pour utilisation interne {{site.data.keyword.IBM_notm}}. |
+{: caption="Tableau 3. Zones pour conteneurs Docker" caption-side="top"}
 
 
 ## Format de journal Kibana pour Message Hub
@@ -91,7 +123,7 @@ Vous pouvez configurer Kibana pour afficher sur la page *Discover* les zones sui
 | \_type | Type de journal, par exemple, *syslog*. |
 | loglevel | Gravité de l'événement consigné. Par exemple, **Info**. |
 | module | Cette zone est définie sur **MessageHub**. |
-{: caption="Tableau 1. Zones des événements de concentrateur de messages" caption-side="top"}
+{: caption="Tableau 4. Zones pour événements Message Hub" caption-side="top"}
 
 Exemple d'entrée de journal :
 

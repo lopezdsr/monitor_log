@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -23,7 +23,7 @@ Pour analyser des journaux d'application Cloud Foundry (CF), utilisez les comman
 Pour plus d'informations, voir [Analyse de journaux d'application CF depuis l'interface CLI](logging_view_cli.html#analyzing_cf_logs_cli).
 
 Pour analyser des journaux de conteneur Docker, utilisez la commande suivante : `cf ic logs`.
-Pour plus d'informations, voir [Analyse de journaux de conteneur Docker depuis l'interface CLI](logging_view_cli.html#analyzing_container_logs_cli).
+Pour plus d'informations, voir [Analyse de journaux de conteneur Docker depuis l'interface CLI](logging_view_cli.html#analyzing_container_logs_cli). Cette fonctionnalité ne s'applique qu'aux conteneurs déployés dans l'infrastructure de cloud gérée par {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Analyse des journaux d'application CF depuis l'interface de ligne de commande
@@ -123,6 +123,8 @@ Pour consulter ce journal, entrez la commande suivante : `cf files nom_applicati
 
 ## Analyse de journaux de conteneur Docker depuis l'interface CLI
 {: #analyzing_container_logs_cli}
+
+**Remarque :** cette fonctionnalité ne s'applique qu'aux conteneurs déployés dans l'infrastructure de cloud gérée par {{site.data.keyword.Bluemix_notm}}.
 
 Utilisez la commande `cf ic logs` pour afficher les journaux d'un conteneur dans {{site.data.keyword.Bluemix_notm}}. Vous pouvez, par exemple, utiliser les journaux pour comprendre pourquoi un conteneur s'est arrêté ou pour examiner la sortie du conteneur. 
 

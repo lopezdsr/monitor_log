@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # Collecte de données de journal autres que par défaut depuis un conteneur
 {: #logging_containers_collect_data}
 
-Pour capturer des données depuis des emplacements de journal autres que ceux par défaut dans un conteneur, définissez la variable d'environnement **LOG_LOCATIONS** lorsque vous créez un conteneur. 
+Pour capturer les données d'emplacements de journaux autres que ceux par défaut dans un conteneur déployé dans l'infrastructure de cloud gérée par {{site.data.keyword.Bluemix_notm}}, définissez la variable d'environnement **LOG_LOCATIONS** lorsque vous créez un conteneur.
 {:shortdesc}
 
 * Ajoutez la variable d'environnement **LOG_LOCATIONS** en spécifiant le chemin du fichier journal lorsque vous créez le conteneur. 

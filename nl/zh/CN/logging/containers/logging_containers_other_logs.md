@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # 从容器收集非缺省日志数据
 {: #logging_containers_collect_data}
 
-要从容器内的非缺省日志位置捕获数据，请在创建容器时，设置 **LOG_LOCATIONS** 环境变量。
+要从在 {{site.data.keyword.Bluemix_notm}} 受管云基础架构中部署的容器内的非缺省日志位置捕获数据，请在创建容器时，设置 **LOG_LOCATIONS** 环境变量。
 {:shortdesc}
 
 * 创建容器时，添加带有日志文件路径的 **LOG_LOCATIONS** 环境变量。 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-03-07"
 Ci-après figurent des réponses sur des questions fréquentes concernant l'utilisation des fonctionnalités de journalisation de {{site.data.keyword.Bluemix}}. {:shortdesc}
 
 * [Comment procéder si je ne vois pas de données dans la page Discover de Kibana ?](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [Que faire en cas de renvoi d'une exception d'authentification ?](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [Comment lancer Kibana 3 ?](logging_qa_kibana.html#logging_qa_kibana3)
+* [Pourquoi le symbole ? s'affiche-t-il en regard de zones sur la page Kibana Discover ?](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## Comment procéder si je ne vois pas de données dans la page Discover de Kibana ?
 {: #logging_qa_no_data_discover_kibana}
@@ -72,5 +72,27 @@ Pour résoudre ce problème, procédez comme suit :
 3. Créez une nouvelle page de tableau de bord excluant les visualisations pour lesquelles une autorisation d'accès aux données ne vous a pas été octroyée et qui causent le problème. 
 
     Si vous partagez le tableau de bord, ne supprimez pas de visualisations car ceci affecterait d'autres membres de l'équipe qui utilisent le même tableau de bord.
+
+## Comment lancer Kibana 3
+{: #logging_qa_kibana3}
+
+**Remarque :** la version Kibana 3 est obsolète.
+
+Vous pouvez lancer Kibana 3 depuis un navigateur.
+
+Procédez comme suit pour lancer Kibana 3 depuis un navigateur :
+
+1. Ouvrez [https://logmet.<span class="keyword" data-hd-keyref="DomainName">NomDomaine</span>](https://logmet.{DomainName}) pour vous connecter à l'interface utilisateur Kibana.
+    
+2. Sélectionnez la version Kibana à utiliser pour analyser vos journaux.
+    * Sélectionnez l'onglet **Kibana 4** si vous désirez utiliser cette version. La page Discovery (Reconnaissance) s'ouvre. Pour plus d'informations, voir [logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively).
+    * Sélectionnez l'onglet **Kibana 3** si vous désirez utiliser cette version. Le tableau de bord Kibana par défaut s'ouvre. Pour plus d'informations sur l'utilisation de Kibana 3 pour analyser vos journaux, voir [Analyse de journaux dans Kibana 3 (Obsolète)](../logging_view_kibana3.html#analyzing_logs_Kibana3). Pour plus d'informations sur la personnalisation d'un tableau de bord Kibana 3, voir cet [article de blogue ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/).
+     
+
+## Pourquoi le symbole ? s'affiche-t-il sur la page Kibana Discover ?
+{: #logging_qa_kibana_question}
+
+Lorsque vous ouvrez la page Discover dans Kibana, vous pourriez rencontrer un signe `?` en regard de zones répertoriées comme disponibles au lieu du caractère `t`. Lorsque vous rechargez la liste des zones, le type des zones est analysé et le signe `?` est remplacé par le caractère `t`. Pour plus d'informations, voir [Rechargement de la liste de zones](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields).
+
 
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Kibana 包含可用于分析日志的不同页面：
 
 * 通过 {{site.data.keyword.Bluemix_notm}}
 
-    可以在 Kibana 中特定 CF 应用程序的上下文中启动到该特定应用程序的日志。
+    可以在 Kibana 中特定 CF 应用程序的上下文中，启动到该特定应用程序的日志。
     
-    可以在 Kibana 中特定 Docker 容器的上下文中启动到该特定容器的日志。 
+    可以在 Kibana 中特定 Docker 容器的上下文中，启动到该特定容器的日志。此功能仅适用于在 {{site.data.keyword.Bluemix_notm}} 受管云基础架构中部署的容器。
     
     对于 CF 应用程序，用于过滤可在 Kibana 中进行分析的数据的查询会检索 Cloud Foundry 应用程序的日志条目。Kibana 缺省显示的日志信息全部与单个 Cloud Foundry 应用程序及其所有实例相关联。 
     

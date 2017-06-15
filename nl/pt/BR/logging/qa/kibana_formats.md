@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+Lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ lastupdated: "2017-04-06"
 
 
 
-## Formato de log do Kibana para contêineres do Docker
+## Formato de log do Kibana para contêineres do Docker que são implementados em uma infraestrutura gerenciada pelo Bluemix
 {: #kibana_log_format_containers}
 
 É possível configurar o Kibana para exibição, na página *Descobrir*, dos seguintes campos para cada entrada de log:
@@ -75,7 +75,38 @@ contêiner.|
 | fluxo | Especifica o tipo de log: stdout, stderr |
 | tempo | A data e a hora de quando o evento ocorreu. O registro de data e hora é definido até o milissegundo.|
 | time stamp | A data e a hora do evento registrado. O registro de data e hora é definido até o milissegundo. |
-{: caption="Tabela 1. Campos para contêineres do Docker" caption-side="top"}
+{: caption="Tabela 2.  Campos para contêineres Dockar" caption-side="top"}
+
+## Formato de log do Kibana para contêineres do Docker que são implementados em um cluster do Kubernetes
+{: #kibana_log_format_containers_kubernetes}
+
+É possível configurar o Kibana para exibir na página *Descobrir* os campos a seguir para cada entrada de log. Esses campos são configurados por {{site.data.keyword.IBM}} e incluem seus dados da mensagem. 
+
+| Campo | Descrição | Other information |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-ddTHH:mm:ss:SS-0500`  <br> O horário do evento registrado. <br> O registro de data e hora é definido até o milissegundo. | |
+| @version | Versão do evento. | |
+| ALCH_TENANT_ID | ID do espaço do {{site.data.keyword.Bluemix_notm}}. | |
+| \_id | O ID exclusivo para seu documento de log. | |
+| \_index | O índice para sua entrada de log. | |
+| \_score |  |  |
+| \_type | O tipo de log; por exemplo, *logs*. | |
+| Crn_str | Informações sobre a origem do log. | Por padrão, esse campo é configurado pelo {{site.data.keyword.IBM_notm}}.b<br> **Nota**: se você enviar a mensagem de log no formato JSON válido e um dos campos for nomeado `crn`, o valor do campo será sobrescrito com o valor configurado na mensagem.  |  
+| Docker.container_id_str | GUID do contêiner em execução em um pod. | |
+| Ibm-containers.account_str | GUID do {{site.data.keyword.Bluemix_notm}} conta.  |  |
+| Ibm-containers.cluster_id_str | GUID do cluster Kubernetes.  |  |
+| Ibm-containers.cluster_type_str |  | O valor reservado para uso interno. {{site.data.keyword.IBM_notm}} |
+| ibm-containers.region_str | Região em {{site.data.keyword.Bluemix_notm}}.  |  |
+| Kubernetes.container_name_str | Nome do contêiner no qual um app é implementado.  |  |
+| Kubernetes.host | Endereço IP público do trabalhador no qual o contêiner está em execução. |  |
+| Kubernetes.labels.*example_label_name*\_str | Par de valores de chave que você anexa a um objeto do Kubernetes, como um pod. | Cada rótulo que você anexa a um objeto do Kubernetes é listado como um campo na entrada de log exibida no Kibana. <br> É possível ter 0 ou mais rótulos. |
+| Kubernetes.namespace_name_str | O namespace do Kubernetes no qual o contêiner é implementado. |  |
+| Kubernetes.pod_id_str | GUID do pod no qual o contêiner é implementado. |  |
+| Kubernetes.pod_name_str | Nome do módulo. |  |
+| mensagem | Mensagem integral. | Se você enviar uma mensagem formatada JSON válida, cada campo será analisado e exibido individualmente no Kibana.  |
+| Stream_str |  | O valor reservado para uso interno. {{site.data.keyword.IBM_notm}} |
+|tag_str |  | O valor reservado para uso interno. {{site.data.keyword.IBM_notm}} |
+{: caption="Tabela 3.  Campos para contêineres Dockar" caption-side="top"}
 
 
 ## Formato de log do Kibana para Hub de Mensagens
@@ -93,7 +124,7 @@ contêiner.|
 | \_type | O tipo de log; por exemplo, *syslog*. |
 | nível de log | A severidade do evento registrado, por exemplo, **Informações**. |
 | Módulo | Esse campo é configurado como **MessageHub**. |
-{: caption="Tabela 1. Campos para eventos de Hub de mensagens" caption-side="top"}
+{: caption="Tabela 4. Campos para eventos de Hub de mensagens" caption-side="top"}
 
 Exemplo de uma entrada de log:
 

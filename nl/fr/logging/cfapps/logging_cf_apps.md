@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ Lorsque vous exécutez vos applications dans une plateforme sous forme de servic
 
 La figure illustrée ci-dessous montre une vue générale de la journalisation des applications Cloud Foundry dans {{site.data.keyword.Bluemix_notm}} :
 
-![Vue d'ensemble des composants des applications CF](../images/logging_cf_apps_ov.jpg "Vue d'ensemble des composants des applications CF")
+![Vue d'ensemble des composants des applications CF](../images/logging_cf_apps_ov.gif "Vue d'ensemble des composants des applications CF")
  
 La journalisation des applications Cloud Foundry est activée automatiquement lorsque vous utilisez l'infrastructure Cloud Foundry pour exécuter vos applications sur {{site.data.keyword.Bluemix_notm}}. Pour consulter les journaux d'exécution de Cloud Foundry, vous devez consigner vos journaux dans les fichiers STDOUT et STDERR. Pour plus d'informations, voir [Journalisation d'application d'exécution via des applications CF](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
 

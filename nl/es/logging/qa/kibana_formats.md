@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 
 
 
-## Formato de registro de Kibana para contenedores Docker
+## Formato de registro de Kibana para contenedores Docker desplegados en una infraestructura gestionada de Bluemix
 {: #kibana_log_format_containers}
 
 Puede configurar Kibana para que muestre los campos siguientes para cada entrada de registro en la página *Descubrir*:
@@ -73,7 +73,38 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 | stream | Especifica el tipo de registro: stdout, stderr |
 | time | La fecha y hora en que se ha producido el suceso. La indicación de fecha y hora se define hasta en milisegundos.|
 | timestamp | La fecha y hora del suceso registrado. La indicación de fecha y hora se define hasta en milisegundos. |
-{: caption="Tabla 1. Campos para contenedores Docker" caption-side="top"}
+{: caption="Tabla 2. Campos para contenedores Docker" caption-side="top"}
+
+## Formato de registro de Kibana para contenedores Docker desplegados en un clúster Kubernetes
+{: #kibana_log_format_containers_kubernetes}
+
+Puede configurar Kibana para que muestre los campos siguientes para cada entrada de registro en la página *Descubrir*. Estos campos los establece {{site.data.keyword.IBM}} e incluyen los datos de su mensaje.  
+
+| Campo | Descripción | Información adicional |
+|-------|-------------|---------------------------|
+| @timestamp | `aaaa-MM-ddTHH:mm:ss:SS-0500`  <br> La hora del suceso registrado. <br> La indicación de fecha y hora se define hasta en milisegundos. | |
+| @version | Versión del suceso. | |
+| ALCH_TENANT_ID | ID del espacio de {{site.data.keyword.Bluemix_notm}}. | |
+| \_id | El ID exclusivo del documento de registro. | |
+| \_index | El índice de la entrada de registro. | |
+| \_score |  |  |
+| \_type | El tipo de registro; por ejemplo, *logs*. | |
+| crn_str | Información sobre el origen del registro.  | De forma predeterminada, este campo lo establece {{site.data.keyword.IBM_notm}}. <br> **Nota**: Si envía el mensaje de registro en un formato JSON válido, y uno de los campos se denomina `crn`, se sobrescribe el valor del campo con el valor que se establece en el mensaje.   |  
+| docker.container_id_str | GUID del contenedor que se está ejecutando en un pod.  | |
+| ibm-containers.account_str | GUID de la cuenta de {{site.data.keyword.Bluemix_notm}}.   |  |
+| ibm-containers.cluster_id_str | GUID del clúster de Kubernetes.   |  |
+| ibm-containers.cluster_type_str |  | Valor reservado para uso interno de {{site.data.keyword.IBM_notm}}.  |
+| ibm-containers.region_str | Región en {{site.data.keyword.Bluemix_notm}}.  |  |
+| kubernetes.container_name_str | Nombre del contenedor donde se despliega una app.  |  |
+| kubernetes.host | Dirección IP pública del trabajador en el que se ejecuta el contenedor.  |  |
+| kubernetes.labels.*nombre_etiqueta_ejemplo*\_str | Pareja de clave/valor que se adjunta a un objeto Kubernetes como, por ejemplo, un pod.  | Cada etiqueta que adjunta a un objeto Kubernetes aparece listada como un campo en la entrada de registro que se visualiza en Kibana. <br> Puede haber o no haber etiquetas.  |
+| kubernetes.namespace_name_str | Espacio de nombres de Kubernetes donde se despliega el contenedor.  |  |
+| kubernetes.pod_id_str | GUID del contenedor en donde se despliega el contenedor.  |  |
+| kubernetes.pod_name_str | Nombre del pod.  |  |
+| message | Mensaje completo. | Si envía un mensaje en formato JSON válido, cada campo se analiza de forma individual y se visualiza en Kibana.   |
+| stream_str |  | Valor reservado para uso interno de {{site.data.keyword.IBM_notm}}.  |
+|tag_str |  | Valor reservado para uso interno de {{site.data.keyword.IBM_notm}}.  |
+{: caption="Tabla 3. Campos para contenedores Docker" caption-side="top"}
 
 
 ## Formato de registro de Kibana para Message Hub
@@ -91,7 +122,7 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 | \_type | El tipo de registro; por ejemplo, *syslog*. |
 | loglevel | La gravedad del suceso registrado; por ejemplo, **Info**. |
 | module | Este campo se establece en **MessageHub**. |
-{: caption="Tabla 1. Campos para los sucesos de MessageHub" caption-side="top"}
+{: caption="Tabla 4. Campos para sucesos de Message Hub" caption-side="top"}
 
 Ejemplo de una entrada de registro:
 

@@ -38,7 +38,7 @@ vCPU | 19 | 57 |
 
 ## 設定
 
-在「{{site.data.keyword.Bluemix}} 專用」和「{{site.data.keyword.Bluemix}} 本端」中，對於所有應用程式，日誌依預設為作用中。若要檢視讀取標準日誌的相關資訊，請參閱「Cloud Foundry 上執行之應用程式的記載」。此外，也可在「{{site.data.keyword.Bluemix}} 專用」和「{{site.data.keyword.Bluemix}} 本端」環境中啟用進階記載。
+在「{{site.data.keyword.Bluemix}} 專用」和「{{site.data.keyword.Bluemix}} 本端」中，對於所有應用程式，日誌依預設為作用中。若要檢視讀取標準日誌的相關資訊，請參閱「Cloud Foundry 上執行之應用程式的記載功能」。此外，也可在「{{site.data.keyword.Bluemix}} 專用」和「{{site.data.keyword.Bluemix}} 本端」環境中啟用進階記載。
 
 ## 日誌保留
 

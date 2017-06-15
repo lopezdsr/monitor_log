@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,9 +21,9 @@ lastupdated: "2017-03-07"
 {:shortdesc}
 
 * [如果在 Kibana 的“发现”页面中看不到数据该怎么办](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [如果获得认证异常该怎么办](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [如何启动 Kibana 3](logging_qa_kibana.html#logging_qa_kibana3)
+* [为什么在 Kibana 的“发现”页面中会看到字段旁边有符号 ?](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## 如果在 Kibana 的“发现”页面中看不到数据该怎么办
 {: #logging_qa_no_data_discover_kibana}
@@ -73,5 +73,27 @@ lastupdated: "2017-03-07"
 3. 在您等待授予访问权以查看导致此问题的可视化项中的数据期间，创建新的“仪表板”页面，将您无权查看的可视化项排除在外。 
 
     如果共享了仪表板，请勿删除这些可视化项，否则会影响使用同一仪表板的其他团队成员。
+
+## 如何启动 Kibana 3
+{: #logging_qa_kibana3}
+
+**注：**不推荐使用 Kibana 3。
+
+您可以通过浏览器启动 Kibana 3。
+
+要通过浏览器启动 Kibana 3，请完成以下步骤：
+
+1. 打开 [https://logmet.<span class="keyword" data-hd-keyref="DomainName">DomainName</span>](https://logmet.{DomainName}) 以登录到 Kibana 用户界面。
+    
+2. 选择要用于分析日志的 Kibana 版本。
+    * 选择 **Kibana 4** 选项卡以使用 Kibana 4。这将打开“发现”页面。有关更多信息，请参阅 [在 Kibana 中以交互方式分析日志](logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively)。
+    * 选择 **Kibana 3** 选项卡以使用 Kibana 3。这将打开缺省 Kibana 仪表板。有关使用 Kibana 3 来分析日志的信息，请参阅[在 Kibana 3 中分析日志（不推荐）](../logging_view_kibana3.html#analyzing_logs_Kibana3)。有关定制 Kibana 3 仪表板的更多信息，请参阅[此博客帖子 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/)。
+     
+
+## 为什么在 Kibana 的“发现”页面中会看到字段旁边有符号 ?
+{: #logging_qa_kibana_question}
+
+当您在 Kibana 中打开“发现”页面时，您可能会在可用字段部分中所列出的字段旁边看到 `?` 而非字符 `t`。当您重新装入字段列表时，系统会分析字段的类型，而 `?` 会由字符 `t` 取代。有关更多信息，请参阅[重新装入字段列表](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)。
+
 
 

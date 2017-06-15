@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-03-07"
 A continuación encontrará las respuestas a preguntas comunes sobre cómo utilizar las funciones de registro de {{site.data.keyword.Bluemix}}. {:shortdesc}
 
 * [¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [¿Qué puedo hacer si recibo una excepción de autenticación?](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [¿Cómo inicio Kibana 3?](logging_qa_kibana.html#logging_qa_kibana3)
+* [¿Por qué veo el símbolo ? en los campos en la página Descubrir de Kibana? ](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## ¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana
 {: #logging_qa_no_data_discover_kibana}
@@ -71,5 +71,27 @@ Para solucionar este problema, siga estos pasos:
 3. Cree una nueva página Panel de control que excluya las visualizaciones para los que no dispone de permisos mientras se le asigna acceso para ver los datos de las visualizaciones que causan el problema. 
 
     Si comparte el Panel de control, no suprima visualizaciones ya que esto afectaría a otros miembros del equipo que utilicen el mismo panel de control.
+
+## ¿Cómo inicio Kibana 3?
+{: #logging_qa_kibana3}
+
+**Nota:** Kibana 3 está en desuso.
+
+Kibana 3 se puede iniciar desde un navegador. 
+
+Complete el siguiente paso para iniciar Kibana 3 desde un navegador: 
+
+1. Abra [https://logmet.<span class="keyword" data-hd-keyref="DomainName">NombreDominio</span>](https://logmet.{DomainName}) para iniciar una sesión en la interfaz de usuario de Kibana.
+    
+2. Seleccione la versión de Kibana que desea utilizar para analizar los registros.
+    * Seleccione el separador **Kibana 4** para trabajar con Kibana 4. Se abrirá la página Descubrir. Para obtener más información, consulte [logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively).
+    * Seleccione el separador **Kibana 3** para trabajar con Kibana 3. Se abrirá el panel de control de Kibana predeterminado. Para obtener información sobre cómo utilizar Kibana 3 para analizar registros, consulte [Análisis de registros en Kibana 3 (en desuso)](../logging_view_kibana3.html#analyzing_logs_Kibana3). Para obtener más información sobre cómo personalizar un panel de control de Kibana 3, consulte [este artículo del blog ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/).
+     
+
+## ¿Por qué veo el símbolo ? en campos en la página Descubrir en Kibana?
+{: #logging_qa_kibana_question}
+
+Cuando abra la página Descubrir en Kibana, podría ver un `?` en los campos que aparecen listados en la sección de campos disponibles en lugar del carácter `t`. Cuando vuelva a cargar la lista de campos, se analizará el tipo de los campos y `?` se sustituirá por el carácter `t`. Para obtener más información consulte [Cómo volver a cargar la lista de campos](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields).
+
 
 

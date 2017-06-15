@@ -46,7 +46,6 @@ Grâce à la fonctionnalité de journalisation offerte par {{site.data.keyword.B
 
 {{site.data.keyword.Bluemix_notm}} enregistre les données de journal générées par {{site.data.keyword.containershort}}. Pour plus d'informations sur la journalisation dans {{site.data.keyword.containershort}}, voir [Journalisation pour IBM Bluemix Container Service](containers/logging_containers_ov.html#logging_containers_ov).  
 
-**Remarque :** Vous pouvez analyser des journaux de conteneur dans {{site.data.keyword.Bluemix_notm}} pour les conteneurs Docker qui sont déployés dans l'infrastructure de cloud gérée par {{site.data.keyword.IBM}}.
 
 ## Analyse de journal dans Bluemix
 {: #logging_bmx_ov_ui}

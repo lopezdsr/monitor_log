@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-27"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -27,7 +27,7 @@ Tenga en cuenta la información siguiente sobre la disponibilidad de los datos d
 * Puede almacenar hasta 1 GB de datos por día. 
 * De forma predeterminada, los registros que están disponibles para su análisis desde la consola de {{site.data.keyword.Bluemix_notm}} incluyen datos correspondientes a las últimas 24 horas.
 
-**Consejo:** Para analizar datos para un periodo personalizado que precede a las últimas 24 horas, consulte [Análisis avanzado de registros con Kibana](logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Consejo:** Para analizar datos para un periodo personalizado que precede a las últimas 24 horas, consulte [Análisis avanzado de registros con Kibana](kibana4/logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
 
 ##  Navegación a los registros de una app Cloud Foundry
 {: #launch_logs_tab_bmx_ui_cf}
@@ -41,14 +41,14 @@ Para ver los registros de despliegue o de tiempo de ejecución de una app Cloud 
     En el separador **Registros**, puede ver los registros recientes de la app o la parte más reciente de los registros en tiempo real. Además, puede filtrar registros por componente (tipo de registro), por ID de instancia de la app y por error.
     
 
-##  Navegación a los registros de un contenedor Docker
+##  Navegación a los registros de un contenedor Docker que se gestiona en Bluemix
 {: #launch_logs_tab_bmx_ui_containers}
 
-Para ver los registros de despliegue o de tiempo de ejecución de un contenedor Docker, siga los pasos siguientes:
+Para ver los registros de tiempo de ejecución o despliegue de un contenedor Docker desplegado en una infraestructura de nube gestionada de {{site.data.keyword.Bluemix_notm}}, complete los siguientes pasos: 
 
 1. En el panel de control Apps, pulse en un contenedor o grupo de contenedores. 
     
-2. En la página de detallesde la app, pulse **Supervisión y registros**.
+2. En la página de detalles de la app, pulse **Supervisión y registros**.
 
 3. Seleccione el separador **Registro**.
     
@@ -66,7 +66,7 @@ Cada entrada de registro contiene los siguientes campos:
 | Campo | Descripción |
 |-------|-------------|
 | Indicación de fecha y hora | La hora de la sentencia de registro. La indicación de fecha y hora se define hasta en milisegundos. |
-| Componente | El componente que genera el registro. Para ver la lista de los distintos componentes, consulte [Orígenes de registro para apps de CF](logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Cada tipo de componente va seguido de una barra inclinada y un dígito que indica la instancia de la aplicación. 0 es el dígito asignado a la primera instancia, 1 es el dígito asignado a la segunda, y así sucesivamente. |
+| Componente | El componente que genera el registro. Para ver la lista de los distintos componentes, consulte [Orígenes de registro para apps de CF](cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Cada tipo de componente va seguido de una barra inclinada y un dígito que indica la instancia de la aplicación. 0 es el dígito asignado a la primera instancia, 1 es el dígito asignado a la segunda, y así sucesivamente. |
 | Mensaje | Mensaje emitido por el componente. El mensaje varía en función del contexto. |
 {: caption="Tabla 1. Campos de entrada de registro de app de CF" caption-side="top"}
 

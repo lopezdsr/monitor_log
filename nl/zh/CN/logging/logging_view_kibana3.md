@@ -23,7 +23,7 @@ lastupdated: "2017-02-22"
 
 * 通过 Cloud Foundry 应用程序仪表板
 
-    可以在 Kibana 中特定 CF 应用程序的上下文中启动到该特定应用程序的日志。
+    可以在 Kibana 中特定 CF 应用程序的上下文中，启动到该特定应用程序的日志。
     
     用于过滤仪表板中所显示数据的查询会检索 Cloud Foundry 应用程序的日志条目。Kibana 仪表板缺省显示的日志信息全部与单个 Cloud Foundry 应用程序及其所有实例相关联。有关更多信息，请参阅[通过 Bluemix 仪表板访问 Kibana 仪表板](logging_view_kibana3.html#launch_Kibana_from_bluemix)。
 

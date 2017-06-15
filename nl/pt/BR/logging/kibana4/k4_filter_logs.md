@@ -28,8 +28,8 @@ uma consulta de procura.
 removê-lo completamente. 
 
 Depois de definir uma nova procura, salve-a para que ela possa ser reutilizada para análise futura na
-página Descobrir ou para criar visualizações que possam ser usadas em painéis customizados. Para obter mais informações, consulte
-[Salvando uma procura](logging_kibana_filtering_logs.html#k4_save_search).
+página Descobrir ou para criar visualizações que possam ser usadas em painéis customizados. Para obter mais
+informações, consulte [Salvando uma procura](logging_kibana_filtering_logs.html#k4_save_search).
 
 Ao executar uma nova procura, o histograma, a tabela e a lista de Campos são atualizados automaticamente
 para mostrar os resultados da procura. Para descobrir quais dados são mostrados, consulte

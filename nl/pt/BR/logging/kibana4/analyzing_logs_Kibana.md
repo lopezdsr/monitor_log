@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+Lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Por exemplo, é desse modo que o Kibana pode ser usado para mostrar informaçõe
 
 * No {{site.data.keyword.Bluemix_notm}}
 
-    É possível ativar para seus logs específicos do app CF no Kibana, no contexto para esse app específico.
+    É possível ativar seus logs específicos do app CF no Kibana dentro do contexto desse App específico.
     
-    É possível ativar para seus logs de contêiner do Docker específicos no Kibana, no contexto para esse contêiner específico. 
+    É possível ativar seus logs específicos do contêiner do Docker dentro do contexto desse contêiner específico. Esse recurso se aplica somente aos contêineres que são implementados na infraestrutura em Nuvem gerenciada pelo {{site.data.keyword.Bluemix_notm}}.
     
     Para apps CF, a consulta que é usada para filtrar os dados que estão disponíveis para análise no Kibana recupera entradas de log para o aplicativo Cloud Foundry. As informações de log que o Kibana exibe estão todas relacionadas a um único aplicativo Cloud Foundry e a todas as suas instâncias. 
     

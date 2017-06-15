@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Foundry (CF) アプリケーション・ログを分析するには、コ�
 詳しくは、『[CLI からの CF アプリ・ログの分析](logging_view_cli.html#analyzing_cf_logs_cli)』を参照してください。
 
 Docker コンテナー・ログを分析するには、コマンド `cf ic logs` を使用します。
-詳しくは、『[CLI からの Docker コンテナー・ログの分析](logging_view_cli.html#analyzing_container_logs_cli)』を参照してください。
+詳しくは、『[CLI からの Docker コンテナー・ログの分析](logging_view_cli.html#analyzing_container_logs_cli)』を参照してください。この機能は、{{site.data.keyword.Bluemix_notm}} が管理するクラウド・インフラストラクチャーにデプロイされたコンテナーにのみ適用されます。
 
 
 ## CLI からの CF アプリ・ログの分析
@@ -125,6 +125,8 @@ Docker コンテナー・ログを分析するには、コマンド `cf ic logs`
 
 ## CLI からの Docker コンテナー・ログの分析
 {: #analyzing_container_logs_cli}
+
+**注:** この機能は、{{site.data.keyword.Bluemix_notm}} が管理するクラウド・インフラストラクチャーにデプロイされたコンテナーにのみ適用されます。
 
 `cf ic logs` コマンドを使用して、{{site.data.keyword.Bluemix_notm}} 内のコンテナーからのログを表示します。例えば、ログを使用して、コンテナーが停止した理由を分析したり、コンテナー出力を確認したりすることができます。 
 

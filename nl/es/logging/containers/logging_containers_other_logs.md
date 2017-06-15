@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # Recopilación de datos de registro no predeterminado desde un contenedor
 {: #logging_containers_collect_data}
 
-Para capturar de ubicaciones de registro que no sean la predeterminada dentro de un contenedor, establezca la variable de entorno **LOG_LOCATIONS** cuando cree un contenedor. 
+Para capturar de ubicaciones de registro que no sean la predeterminada dentro de un contenedor desplegado en la infraestructura de nube gestionada de {{site.data.keyword.Bluemix_notm}}, establezca la variable de entorno **LOG_LOCATIONS** cuando cree un contenedor.
 {:shortdesc}
 
 * Añada la variable de entorno de **LOG_LOCATIONS** con una vía de acceso al archivo de registro cuando cree el contenedor. 

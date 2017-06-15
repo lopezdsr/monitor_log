@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+Lastupdated: "2017-05-22"
 
 ---
 
@@ -26,7 +26,7 @@ Para analisar os logs do aplicativo Cloud Foundry (CF), use o comando a seguir:
 
 Para analisar os logs do contêiner do Docker, use o comando a seguir: `cf ic logs`. Para
 obter mais informações, consulte [Analisando
-logs do contêiner do Docker na CLI](logging_view_cli.html#analyzing_container_logs_cli).
+logs do contêiner do Docker na CLI](logging_view_cli.html#analyzing_container_logs_cli). Esse recurso se aplica somente aos contêineres que são implementados na infraestrutura em Nuvem gerenciada pelo {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Analisando logs do app CF na CLI
@@ -135,6 +135,8 @@ logs/staging_task.log`
 
 ## Analisando logs do contêiner do Docker na CLI
 {: #analyzing_container_logs_cli}
+
+**Nota:** esse recurso se aplica somente aos contêineres que são implementados na infraestrutura em Nuvem gerenciada pelo {{site.data.keyword.Bluemix_notm}}.
 
 Use o comando `cf ic logs` para exibir logs de um contêiner no
 {{site.data.keyword.Bluemix_notm}}. Por exemplo, é possível usar os logs para analisar por que um

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -52,7 +52,7 @@ lastupdated: "2017-04-06"
 
 
 
-## Docker コンテナーの Kibana ログ・フォーマット
+## Bluemix が管理するインフラストラクチャーにデプロイされた Docker コンテナーの Kibana ログ・フォーマット
 {: #kibana_log_format_containers}
 
 各ログ項目の以下のフィールドを「*Discover*」ページで表示するように Kibana を構成できます。
@@ -75,7 +75,38 @@ lastupdated: "2017-04-06"
 | stream | ログのタイプ (stdout、stderr) を指定します。 |
 | time | イベント発生日時。タイム・スタンプは、ミリ秒単位まで定義されます。|
 | timestamp | ログに記録されたイベントの日時。タイム・スタンプは、ミリ秒単位まで定義されます。 |
-{: caption="表 1. Docker コンテナー用のフィールド" caption-side="top"}
+{: caption="表 2. Docker コンテナー用のフィールド" caption-side="top"}
+
+## Kubernetes クラスターにデプロイされた Docker コンテナーの Kibana ログ・フォーマット
+{: #kibana_log_format_containers_kubernetes}
+
+各ログ項目の以下のフィールドを「*Discover*」ページで表示するように Kibana を構成できます。これらのフィールドは、{{site.data.keyword.IBM}} によって設定され、ユーザーのメッセージ・データを含んでいます。 
+
+| フィールド | 説明 | その他の情報 |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-ddTHH:mm:ss:SS-0500`  <br> ログに記録されたイベントの時刻。<br> タイム・スタンプは、ミリ秒単位まで定義されます。 | |
+| @version | イベントのバージョン。 | |
+| ALCH_TENANT_ID | {{site.data.keyword.Bluemix_notm}} スペースの ID。 | |
+| \_id | ログ文書の固有 ID。 | |
+| \_index | ログ項目のインデックス。 | |
+| \_score |  |  |
+| \_type | ログのタイプ (例、*logs*)。 | |
+| crn_str | ログのソースについての情報。 | デフォルトでは、このフィールドは {{site.data.keyword.IBM_notm}} によって設定されます。<br> **注:** 有効な JSON フォーマットでログ・メッセージが送信され、フィールドの 1 つが `crn` という名前である場合、フィールドの値はメッセージ中に設定されている値で上書きされます。  |  
+| docker.container_id_str | ポッド内で実行されているコンテナーの GUID。 | |
+| ibm-containers.account_str | {{site.data.keyword.Bluemix_notm}} アカウントの GUID。  |  |
+| ibm-containers.cluster_id_str | Kubernetes クラスターの GUID。  |  |
+| ibm-containers.cluster_type_str |  | {{site.data.keyword.IBM_notm}} 内部使用のための予約済みの値。 |
+| ibm-containers.region_str | {{site.data.keyword.Bluemix_notm}} の地域。  |  |
+| kubernetes.container_name_str | アプリがデプロイされたコンテナーの名前。  |  |
+| kubernetes.host | コンテナーが実行されているワーカーのパブリック IP アドレス。 |  |
+| kubernetes.labels.*example_label_name*\_str | ポッドなどの Kubernetes オブジェクトに付加するキーと値のペア。 | Kubernetes オブジェクトに付加する各ラベルが、Kibana で表示されるログ項目内で 1 つのフィールドとしてリストされます。<br> ラベルはなくてもよく、複数あってもかまいません。 |
+| kubernetes.namespace_name_str | コンテナーがデプロイされた Kubernetes 名前空間。 |  |
+| kubernetes.pod_id_str | コンテナーがデプロイされたポッドの GUID。 |  |
+| kubernetes.pod_name_str | ポッドの名前。 |  |
+| message | 完全なメッセージ。 | 有効な JSON フォーマットのメッセージを送信すると、Kibana では各フィールドが個別に構文解析されて表示されます。  |
+| stream_str |  | {{site.data.keyword.IBM_notm}} 内部使用のための予約済みの値。 |
+|tag_str |  | {{site.data.keyword.IBM_notm}} 内部使用のための予約済みの値。 |
+{: caption="表 3. Docker コンテナー用のフィールド" caption-side="top"}
 
 
 ## Message Hub の Kibana ログ・フォーマット
@@ -94,7 +125,7 @@ lastupdated: "2017-04-06"
 | \_type | ログのタイプ (例: *syslog*)。 |
 | loglevel | ログに記録するイベントの重大度 (例えば、**Info**)。 |
 | module | このフィールドは、**MessageHub** に設定されます。 |
-{: caption="表 1. メッセージング・ハブ・イベント用のフィールド" caption-side="top"}
+{: caption="表 4. Message Hub イベント用のフィールド" caption-side="top"}
 
 ログ項目の例:
 

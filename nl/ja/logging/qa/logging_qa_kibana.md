@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-07"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,9 +21,9 @@ lastupdated: "2017-03-07"
 {:shortdesc}
 
 * [Kibana の「Discover」ページでデータを表示できない場合、どうすればよいですか?](logging_qa_kibana.html#logging_qa_no_data_discover_kibana)
-
 * [認証例外を受け取った場合、どうすればよいですか?](logging_qa_kibana.html#logging_qa_no_data_dashboard_kibana)
-
+* [Kibana 3 を起動するにはどうすればよいですか?](logging_qa_kibana.html#logging_qa_kibana3)
+* [Kibana の「Discover」ページでフィールドの横に ? 記号が表示されるのはなぜですか?](logging_qa_kibana.html#logging_qa_kibana_question)
 
 ## Kibana の「Discover」ページでデータを表示できない場合、どうすればよいですか?
 {: #logging_qa_no_data_discover_kibana}
@@ -73,5 +73,27 @@ Kibana でデータを表示できない場合、以下の異なるシナリオ�
 3. 問題の原因となっている視覚化のデータを表示する権限を付与してもらっている間、権限のない視覚化を除外した新規「Dashboard」ページを作成します。 
 
     そのダッシュボードを共有している場合、同じダッシュボードを使用している他のチーム・メンバーが影響を受けるため、視覚化を削除しないでください。
+
+## Kibana 3 を起動するにはどうすればよいですか?
+{: #logging_qa_kibana3}
+
+**注:** Kibana 3 は非推奨です。
+
+ブラウザーから Kibana 3 を起動できます。
+
+ブラウザーから Kibana 3 を起動するには、以下の手順を実行します。
+
+1. Kibana ユーザー・インターフェースにログインするため、[https://logmet.<span class="keyword" data-hd-keyref="DomainName">DomainName</span>](https://logmet.{DomainName}) を開きます。
+    
+2. ログの分析に使用する Kibana のバージョンを選択します。
+    * Kibana 4 で作業する場合は、**「Kibana 4」**タブを選択します。「Discovery」ページが開きます。詳しくは、[logging_kibana_analize_logs_interactively.html#kibana_analize_logs_interactively) を参照してください。
+    * Kibana 3 を使用して作業する場合は**「Kibana 3」**タブを選択します。 デフォルト Kibana ダッシュボードが開きます。Kibana 3 を使用したログの分析については、[Kibana 3 でのログの分析 (非推奨)](../logging_view_kibana3.html#analyzing_logs_Kibana3) に関する個所を参照してください。Kibana 3 ダッシュボードのカスタマイズについて詳しくは、[このブログ投稿![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/blogs/bluemix/2015/09/creating-custom-kibana-dashboard-in-bluemix/)を参照してください。
+     
+
+## Kibana の「Discover」ページでフィールドの横に ? 記号が表示されるのはなぜですか?
+{: #logging_qa_kibana_question}
+
+Kibana で「Discover」ページを開くと、「available fields」セクションにリストされるフィールドの横に文字 `t` ではなく `?` が表示されることがあります。フィールドのリストを再ロードすると、フィールドのタイプが分析され、`?` は文字 `t` に置き換えられます。詳しくは、『[フィールド・リストの再ロード](../kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)』を参照してください。
+
 
 

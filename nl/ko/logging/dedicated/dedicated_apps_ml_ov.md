@@ -40,7 +40,7 @@ vCPU | 19 | 57 |
 
 {{site.data.keyword.Bluemix}} 데디케이티드 및 {{site.data.keyword.Bluemix}} 로컬에서 모든 앱에 대한 로그는 기본적으로 활성입니다. 표준 로그 읽기에 대한 정보를 보려면 Cloud Foundry에서 실행되는 앱에 대한 로깅을 참조하십시오. 또한 고급 로깅은 {{site.data.keyword.Bluemix}} 데디케이티드 및 {{site.data.keyword.Bluemix}} 로컬 환경에서 사용 가능합니다.
 
-## 로그 보유
+## 로그 보존
 
 {{site.data.keyword.Bluemix}} 데디케이티드 및 {{site.data.keyword.Bluemix}} 로컬 Cloud Foundry 앱에서 로그 데이터는 기본적으로 30일 동안 저장됩니다.
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,7 +21,7 @@ En {{site.data.keyword.Bluemix}}, puede ver, filtrar y analizar registros median
 
 Para analizar los registros de la aplicación Cloud Foundry (CF), utilice el mandato siguiente: `cf logs` Para obtener más información, consulte [Análisis de registros de app CF desde la CLI](logging_view_cli.html#analyzing_cf_logs_cli).
 
-Para analizar los registros del contenedor Docker, utilice el mandato siguiente: `cf ic logs` Para obtener más información, consulte [Análisis de registros del contenedor Docker desde la CLI](logging_view_cli.html#analyzing_container_logs_cli).
+Para analizar los registros del contenedor Docker, utilice el mandato siguiente: `cf ic logs` Para obtener más información, consulte [Análisis de registros del contenedor Docker desde la CLI](logging_view_cli.html#analyzing_container_logs_cli). Esta característica únicamente se aplica a contenedores desplegados en la infraestructura de nube gestionada de {{site.data.keyword.Bluemix_notm}}. 
 
 
 ## Análisis de registros de app de CF desde la CLI
@@ -125,6 +125,8 @@ Para ver este registro, ejecute el siguiente mandato: `cf files appname logs/sta
 
 ## Análisis de registros del contenedor Docker desde la CLI
 {: #analyzing_container_logs_cli}
+
+**Nota:** Esta característica únicamente se aplica a contenedores desplegados en la infraestructura de nube gestionada de {{site.data.keyword.Bluemix_notm}}. 
 
 Utilice el mandato `cf ic logs` para visualizar los registros de un contenedor en {{site.data.keyword.Bluemix_notm}}. Por ejemplo, puede utilizar los registros para analizar por qué un contenedor se ha detenido o para revisar la salida del contenedor. 
 

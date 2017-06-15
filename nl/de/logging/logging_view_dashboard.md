@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-27"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -27,7 +27,7 @@ Beachten Sie die folgenden Informationen zur Verfügbarkeit von Protokolldaten f
 * Sie können bis zu 1 GB an Daten pro Tag speichern. 
 * Die Protokolle, die für die Analyse über die {{site.data.keyword.Bluemix_notm}}-Konsole verfügbar sind, umfassen standardmäßig Daten für den Zeitraum der letzten 24 Stunden.
 
-**Tipp:** Wenn Sie Daten für einen angepassten Zeitraum analysieren wollen, der vor den letzten 24 Stunden liegt, finden Sie weitere Informationen unter [Erweiterte Protokollanalyse mit Kibana](logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Tipp:** Wenn Sie Daten für einen angepassten Zeitraum analysieren wollen, der vor den letzten 24 Stunden liegt, finden Sie weitere Informationen unter [Erweiterte Protokollanalyse mit Kibana](kibana4/logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
 
 ##  Zu den Protokollen einer Cloud Foundry-App navigieren
 {: #launch_logs_tab_bmx_ui_cf}
@@ -41,10 +41,10 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellungs- und Laufzeitprot
     Auf der Registerkarte **Protokolle** können Sie die letzten Protokolle für Ihre App oder Protokollendabschnitte in Echtzeit anzeigen. Darüber hinaus können Sie Protokolle nach Komponente (Protokolltyp), App-Instanz-ID und nach Fehler filtern.
     
 
-##  Zu den Protokollen eines Docker-Containers navigieren
+##  Zu den Protokollen eines Docker-Containers navigieren, der in Bluemix verwaltet wird
 {: #launch_logs_tab_bmx_ui_containers}
 
-Führen Sie die folgenden Schritte aus, um Bereitstellungs- oder Laufzeitprotokolle eines Docker-Containers anzuzeigen:
+Zum Anzeigen der Bereitstellungs- oder Laufzeitprotokolle eines Docker-Containers, der in der {{site.data.keyword.Bluemix_notm}}-verwalteten Cloudinfrastruktur bereitgestellt wird, führen Sie die folgenden Schritte aus:
 
 1. Klicken Sie im Dashboard 'Apps' auf einen einzelnen Container oder eine Containergruppe. 
     
@@ -66,7 +66,7 @@ Jeder Protokolleintrag enthält die folgenden Felder:
 | Feld | Beschreibung |
 |-------|-------------|
 | Zeitmarke | Die Zeit des Protokolleintrags. Die Zeitmarke ist bis auf die Millisekunde definiert. |
-| Komponente | Die Komponente, die das Protokoll generiert. Eine Liste der verschiedenen Komponenten finden Sie unter [Protokollquellen für CF-Apps](logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Auf jeden Komponententyp folgt ein Schrägstrich und eine Ziffer, die die Anwendungsinstanz angibt. 0 ist die Ziffer, die der ersten Instanz zugeordnet ist, 1 die der zweiten usw. |
+| Komponente | Die Komponente, die das Protokoll generiert. Eine Liste der verschiedenen Komponenten finden Sie unter [Protokollquellen für CF-Apps](cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Auf jeden Komponententyp folgt ein Schrägstrich und eine Ziffer, die die Anwendungsinstanz angibt. 0 ist die Ziffer, die der ersten Instanz zugeordnet ist, 1 die der zweiten usw. |
 | Nachricht | Die Nachricht, die von der Komponente ausgegeben wird. Die Nachricht variiert abhängig vom Kontext. |
 {: caption="Tabelle 1. Felder eines CF-App-Protokolleintrags" caption-side="top"}
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,18 +21,21 @@ lastupdated: "2017-03-13"
 
 要定义定制搜索，请完成以下任务：
 
-1. 访问 Cloud Foundry (CF) 应用程序或容器的**日志**选项卡。 
+1. 启动 Kibana。
 
-    1.  在 {{site.data.keyword.Bluemix}}“仪表板”中单击应用程序名称或容器。
-    2. 对于 CF 应用程序，单击**日志**选项卡。对于容器，单击**监视和日志**，然后选择**日志记录**选项卡。
+    对于在 {{site.data.keyword.Bluemix}} 受管云基础架构中运行的 Cloud Foundry (CF) 应用程序或容器，完成以下步骤：
     
-    这将显示日志。
+    1. 访问 Cloud Foundry (CF) 应用程序或容器的**日志**选项卡。 
 
-2. 访问 Kibana。单击**高级视图** ![“高级视图”链接](images/logging_advanced_view.jpg "“高级视图”链接")。这将显示 Kibana 仪表板。
+        在 {{site.data.keyword.Bluemix_notm}}“仪表板”中单击应用程序名称或容器。然后，对于 CF 应用程序，单击**日志**选项卡；对于容器，单击**监视和日志**，然后选择**日志记录**选项卡。这将显示日志。
 
+    2. 访问 Kibana。单击**高级视图** ![“高级视图”链接](images/logging_advanced_view.jpg "“高级视图”链接")。这将显示 Kibana 仪表板。
+    
+    对于在 Kubernetes 集群中运行的容器，请[从浏览器启动 Kibana](k4_launch.html#launch_Kibana_from_browser)。 
+    
     访问 Kibana 时，将应用缺省搜索。您可以看到已为其启动 Kibana 的资源实例列表的日志。可以过滤该空间中任何或全部 {{site.data.keyword.Bluemix_notm}} 资源的日志。
 
-3. 查看“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](logging_kibana_analize_logs_interactively.html#k4_identify_data)。然后，修改缺省查询以过滤条目。
+2. 查看“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](logging_kibana_analize_logs_interactively.html#k4_identify_data)。然后，修改缺省查询以过滤条目。
 
     **注：**使用 Lucene 查询语言来定义定制查询。有关更多信息，请参阅 [Apache Lucene - Query Parser Syntax ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
@@ -46,7 +49,7 @@ lastupdated: "2017-03-13"
 
      例如，对于 CF 应用程序，可以创建查询 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]`，此查询中仅列出实例 *0* 和 *1* 的条目。 
 
-4. 保存查询，以便将来可以复用。有关更多信息，请参阅[保存搜索](logging_kibana_filtering_logs.html#k4_save_search)。 
+3. 保存查询，以便将来可以复用。有关更多信息，请参阅[保存搜索](logging_kibana_filtering_logs.html#k4_save_search)。 
 
 **注：**如果需要删除查询，请参阅[删除搜索](logging_kibana_filtering_logs.html#k4_delete_search)。
 

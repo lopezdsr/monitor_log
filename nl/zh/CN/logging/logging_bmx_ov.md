@@ -46,7 +46,6 @@ lastupdated: "2017-03-29"
 
 {{site.data.keyword.Bluemix_notm}} 会记录由 {{site.data.keyword.containershort}} 生成的日志数据。有关在 {{site.data.keyword.containershort}} 中进行日志记录的更多信息，请参阅[为 IBM Bluemix Container Service 进行日志记录](containers/logging_containers_ov.html#logging_containers_ov)。  
 
-**注：**可以在 {{site.data.keyword.Bluemix_notm}} 中分析部署在 {{site.data.keyword.IBM}} 管理的云基础架构中的 Docker 容器的容器日志。
 
 ## 在 Bluemix 中进行日志分析
 {: #logging_bmx_ov_ui}

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,18 +21,21 @@ lastupdated: "2017-03-13"
 
 사용자 정의 검색을 정의하려면 다음 태스크를 완료하십시오.
 
-1. CF(Cloud Foundry) 앱 또는 컨테이너의 **로그** 탭에 액세스하십시오. 
+1. Kibana를 시작하십시오. 
 
-    1. {{site.data.keyword.Bluemix}} 대시보드에서 앱 이름이나 컨테이너를 클릭하십시오.
-    2. CF 애플리케이션의 경우 **로그** 탭을 클릭하십시오. 컨테이너의 경우 **모니터링 및 로그**를 클릭한 다음 **로깅** 탭을 선택하십시오.
+    {{site.data.keyword.Bluemix}} 관리 클라우드 인프라에서 실행되는 Cloud Foundry(CF) 앱 또는 컨테이너의 경우에는 다음 단계를 완료하십시오. 
     
-    로그가 표시됩니다.
+    1. CF(Cloud Foundry) 앱 또는 컨테이너의 **로그** 탭에 액세스하십시오. 
 
-2. Kibana에 액세스하십시오. **고급 보기**(![고급 보기 링크](images/logging_advanced_view.jpg "고급 보기 링크"))를 클릭하십시오. Kibana 대시보드가 표시됩니다.
+        {{site.data.keyword.Bluemix_notm}} 대시보드에서 앱 이름이나 컨테이너를 클릭하십시오. 그 후 CF 애플리케이션의 경우에는 **로그** 탭, 컨테이너의 경우에는 **모니터링 및 로그**를 클릭한 다음 **로깅** 탭을 선택하십시오. 로그가 표시됩니다.
 
+    2. Kibana에 액세스하십시오. **고급 보기**(![고급 보기 링크](images/logging_advanced_view.jpg "고급 보기 링크"))를 클릭하십시오. Kibana 대시보드가 표시됩니다.
+    
+    Kubernetes 클러스터에서 실행되는 컨테이너의 경우에는 [브라우저에서 Kibana를 시작하십시오](k4_launch.html#launch_Kibana_from_browser).  
+    
     Kibana에 액세스할 때 기본 검색이 적용됩니다. Kibana를 시작한 리소스의 인스턴스 목록에 대한 로그를 볼 수 있습니다. 해당 영역의 일부 또는 모든 {{site.data.keyword.Bluemix_notm}} 리소스에 대해 로그를 필터링할 수 있습니다.
 
-3. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시되는 데이터 식별](logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
+2. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시되는 데이터 식별](logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
 
     **참고:** Lucene 조회 언어를 사용하여 사용자 정의 조회를 정의하십시오. 자세한 정보는 [Apache Lucene - Query Parser Syntax ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}를 참조하십시오.
     
@@ -46,7 +49,7 @@ lastupdated: "2017-03-13"
 
      예를 들어, CF 앱의 경우 *0* 및 *1* 인스턴스의 항목만 나열하는 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` 조회를 작성할 수 있습니다. 
 
-4. 나중에 재사용할 수 있도록 조회를 저장하십시오. 자세한 정보는 [검색 저장](logging_kibana_filtering_logs.html#k4_save_search)을 참조하십시오. 
+3. 나중에 재사용할 수 있도록 조회를 저장하십시오. 자세한 정보는 [검색 저장](logging_kibana_filtering_logs.html#k4_save_search)을 참조하십시오. 
 
 **참고:** 조회를 삭제해야 하는 경우 [검색 삭제](logging_kibana_filtering_logs.html#k4_delete_search)를 참조하십시오.
 

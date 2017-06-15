@@ -46,7 +46,6 @@ Die von {{site.data.keyword.Bluemix_notm}} bereitgestellte Protokollierungsfunkt
 
 {{site.data.keyword.Bluemix_notm}} zeichnet Protokolldaten auf, die durch {{site.data.keyword.containershort}} generiert werden. Weitere Informationen zur Protokollierung in {{site.data.keyword.containershort}} finden Sie unter [Protokollierung für den IBM Bluemix Container Service](containers/logging_containers_ov.html#logging_containers_ov).  
 
-**Hinweis:** Sie können Containerprotokolle in {{site.data.keyword.Bluemix_notm}} für Docker-Container analysieren, die in der von {{site.data.keyword.IBM}} verwalteten Cloud-Infrastruktur bereitgestellt sind.
 
 ## Protokollanalyse in Bluemix
 {: #logging_bmx_ov_ui}
