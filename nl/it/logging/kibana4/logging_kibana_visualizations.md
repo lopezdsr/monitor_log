@@ -86,7 +86,7 @@ Completa la seguente procedura per creare una visualizzazione dalla pagina Visua
   
 8. Aggiungi bucket secondari per suddividere i dati.
 
-Per ulteriori informazioni su Kibana, consulta [Kibana User Guide ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}.
+Per ulteriori informazioni su Kibana, vedi [Kibana User Guide ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}.
 
 ## Eliminazione di una visualizzazione
 {:#logging_kibana_visualizations_delete}

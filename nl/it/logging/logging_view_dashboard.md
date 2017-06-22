@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-27"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -27,7 +27,7 @@ Tieni conto delle seguenti informazioni sulla disponibilità dei dati di log per
 * Puoi archiviare fino a 1 GB di dati al giorno. 
 * Per impostazione predefinita, i log disponibili per l'analisi dalla console {{site.data.keyword.Bluemix_notm}} includono i dati delle ultime 24 ore.
 
-**Suggerimento:** per analizzare i dati per un periodo personalizzato precedente alle ultime 24 ore, consulta [Analisi log avanzata con Kibana](logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Suggerimento:** per analizzare i dati per un periodo personalizzato precedente alle ultime 24 ore, vedi [Analisi log avanzata con Kibana](kibana4/logging_analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
 
 ##  Passaggio ai log di un'applicazione Cloud Foundry
 {: #launch_logs_tab_bmx_ui_cf}
@@ -41,10 +41,10 @@ Per visualizzare i log di distribuzione o di runtime di un'applicazione Cloud Fo
     Dalla scheda **Log**, puoi visualizzare in tempo reale i log recenti riguardanti la tua applicazione o le parti finali dei log. Inoltre, puoi filtrare i log in base al componente (tipo di log), all'ID istanza dell'applicazione e all'errore.
     
 
-##  Passaggio ai log di un contenitore Docker
+##  Accesso ai log di un contenitore Docker gestito in Bluemix
 {: #launch_logs_tab_bmx_ui_containers}
 
-Per visualizzare i log di distribuzione o di runtime di un contenitore Docker, completa la seguente procedura:
+Per visualizzare i log di distribuzione o runtime di un contenitore Dock distribuito nell'infrastruttura cloud gestita da {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
 
 1. Dal dashboard Applicazioni, fai clic sul singolo contenitore o sul gruppo di contenitori 
     
@@ -66,7 +66,7 @@ Ogni voce di log contiene i seguenti campi:
 | Campo | Descrizione |
 |-------|-------------|
 | Data/ora | L'ora dell'istruzione di log. La data e ora è definita fino al millisecondo. |
-| Componente | Il componente che produce il log. Per l'elenco dei diversi componenti, consulta [Origini del log per le applicazioni CF](logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Ogni tipo di componente è seguito da una barra e da un numero che indica l'istanza dell'applicazione. 0 è il numero assegnato alla prima istanza, 1 è il numero assegnato alla seconda e così via. |
+| Componente | Il componente che produce il log. Per l'elenco dei diversi componenti, vedi [Origini del log per le applicazioni CF](cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Ogni tipo di componente è seguito da una barra e da un numero che indica l'istanza dell'applicazione. 0 è il numero assegnato alla prima istanza, 1 è il numero assegnato alla seconda e così via. |
 | Messaggio | Il messaggio che viene emesso dal componente. Il messaggio varia a seconda dal contesto. |
 {: caption="Tabella 1. Campi per le voci di log dell'applicazione CF" caption-side="top"}
 

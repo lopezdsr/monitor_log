@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-13"
+lastupdated: "2017-05-22"
 
 ---
 
@@ -21,20 +21,23 @@ Nella barra di ricerca della pagina Rileva, puoi definire e salvare le query di 
 
 Completa le seguenti attività per definire una ricerca personalizzata:
 
-1. Accedi alla scheda **Log** della tua applicazione o contenitore Cloud Foundry (CF). 
+1. Avvia Kibana.
 
-    1. Fai clic sul nome dell'applicazione o sul contenitore nel dashboard {{site.data.keyword.Bluemix}}.
-    2. Per le applicazioni CF, fai clic sulla scheda **Log**. Per i contenitori, fai clic su **Monitoraggio e log** e seleziona quindi la scheda **Registrazione**.
+    Per i contenitori o le applicazioni CF (Cloud Foundry) eseguiti nell'infrastruttura cloud gestita da {{site.data.keyword.Bluemix}}, completa la seguente procedura:
     
-    Vengono visualizzati i log.
+    1. Accedi alla scheda **Log** della tua applicazione o contenitore Cloud Foundry (CF). 
 
-2. Accedi a Kibana. Fai clic su **Vista avanzata** ![link Vista avanzata](images/logging_advanced_view.jpg "Advanced view link"). Viene visualizzato il dashboard Kibana.
+        Fai clic sul nome dell'applicazione o sul contenitore nel dashboard {{site.data.keyword.Bluemix_notm}}. Quindi, per le applicazioni CF, fai clic sulla scheda **Log**; per i contenitori, fai clic su **Monitoraggio e log** e seleziona quindi la scheda **Registrazione**. Vengono visualizzati i log.
 
+    2. Accedi a Kibana. Fai clic su **Vista avanzata** ![link Vista avanzata](images/logging_advanced_view.jpg "Advanced view link"). Viene visualizzato il dashboard Kibana.
+    
+    Per i contenitori eseguiti in un cluster Kubernetes, [avvia Kibana dal browser](k4_launch.html#launch_Kibana_from_browser). 
+    
     Quando accedi a Kibana, viene applicata la ricerca predefinita. Puoi visualizzare i log per l'elenco di istanze delle risorse per cui hai avviato Kibana. Puoi filtrare i log per ognuna delle risorse {{site.data.keyword.Bluemix_notm}} in tale spazio.
 
-3. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data). Quindi, modifica la query predefinita per filtrare le voci.
+2. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data). Quindi, modifica la query predefinita per filtrare le voci.
 
-    **Nota:** utilizza il linguaggio di query Lucene per definire la tua query personalizzata. Per ulteriori informazioni, consulta [Apache Lucene - Query Parser Syntax  ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
+    **Nota:** utilizza il linguaggio di query Lucene per definire la tua query personalizzata. Per ulteriori informazioni, vedi [Apache Lucene - Query Parser Syntax  ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
     Quando viene avviato Kibana da {{site.data.keyword.Bluemix_notm}}, per modificare la query e per definire più criteri di ricerca, puoi utilizzare i termini logici **AND** e **OR**. Questi operatori devono essere maiuscoli.    
     
@@ -46,9 +49,9 @@ Completa le seguenti attività per definire una ricerca personalizzata:
 
      Ad esempio, per un'applicazione CF, puoi creare una query `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` che elenca solo le voci per le istanze *0* e *1*. 
 
-4. Salva la query in modo da poterla riutilizzare successivamente. Per ulteriori informazioni, vedi [Salvataggio di una ricerca](logging_kibana_filtering_logs.html#k4_save_search). 
+3. Salva la query in modo da poterla riutilizzare successivamente. Per ulteriori informazioni, vedi [Salvataggio di una ricerca](logging_kibana_filtering_logs.html#k4_save_search). 
 
-**Nota:** se hai bisogno di eliminare una query, consulta [Eliminazione di una ricerca](logging_kibana_filtering_logs.html#k4_delete_search).
+**Nota:** se hai bisogno di eliminare una query, vedi [Eliminazione di una ricerca](logging_kibana_filtering_logs.html#k4_delete_search).
 
 
 

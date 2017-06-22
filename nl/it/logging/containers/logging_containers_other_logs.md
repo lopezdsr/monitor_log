@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-03-16"
+lastupdated: "2017-05-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-03-16"
 # Raccolta di dati di log non predefiniti da un contenitore
 {: #logging_containers_collect_data}
 
-Per acquisire i dati da ubicazioni log non predefinite in un contenitore, configura la variabile di ambiente **LOG_LOCATIONS** quando crei un contenitore. 
+Per acquisire i dati da ubicazioni log non predefinite in un contenitore distribuito nell'infrastruttura cloud gestita da {{site.data.keyword.Bluemix_notm}}, configura la variabile di ambiente **LOG_LOCATIONS** quando crei un contenitore.
 {:shortdesc}
 
 * Aggiungi la variabile di ambiente **LOG_LOCATIONS** con un percorso al file di log quando crei il contenitore. 
@@ -64,7 +64,7 @@ Viene visualizzato il dashboard del contenitore. Controlla che lo stato del cont
 
 Completa le seguenti istruzioni per raccogliere i dati di log non predefiniti tramite la CLI:
 
-1. Configura un terminale per utilizzare la CLI {{site.data.keyword.containershort}}. Per ulteriori informazioni, consulta [Configurazione della CLI del servizio IBM Bluemix Container](/docs/containers/container_cli_cfic_install.html).
+1. Configura un terminale per utilizzare la CLI {{site.data.keyword.containershort}}. Per ulteriori informazioni, vedi [Configurazione della CLI del servizio IBM Bluemix Container](/docs/containers/container_cli_cfic_install.html).
 
 2. Accedi alla CLI Cloud Foundry utilizzando il seguente comando: `cf login`. Immetti i tuoi ID, password, organizzazione e spazio {{site.data.keyword.Bluemix_notm}} quando ti viene richiesto. 
 

@@ -28,7 +28,7 @@ In questo esempio, uno sviluppatore di nome Jane crea un server virtuale utilizz
         dpkg -i  ~/splunklight-6.3.0-aa7d4b1ccb80-linux-2.6-amd64.deb
         ```
 
-     b. Jane installa e applica le patch al componente aggiuntivo con tecnologia syslog RFC5424 da integrare con {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni sulle istruzioni di installazione del componente aggiuntivo, consulta la [Guida Cloud Foundry ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.cloudfoundry.org/devguide/services/integrate-splunk.html){:new_window}.
+     b. Jane installa e applica le patch al componente aggiuntivo con tecnologia syslog RFC5424 da integrare con {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni sulle istruzioni di installazione del componente aggiuntivo, vedi la [Guida Cloud Foundry ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.cloudfoundry.org/devguide/services/integrate-splunk.html){:new_window}.
 
 	    Jane installa il componente aggiuntivo utilizzando i seguenti comandi:
 

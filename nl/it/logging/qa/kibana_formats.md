@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-23"
 
 ---
 
@@ -51,7 +51,7 @@ Puoi configurare Kibana in modo che visualizzi nella pagina *Rileva* i seguenti 
 
 
 
-## Formato dei log Kibana per i contenitori Docker
+## Formato di log Kibana per i contenitori Docker distribuiti in un'infrastruttura gestita da Bluemix
 {: #kibana_log_format_containers}
 
 Puoi configurare Kibana in modo che visualizzi nella pagina *Rileva* i seguenti campi per ogni voce di log:
@@ -73,7 +73,38 @@ Puoi configurare Kibana in modo che visualizzi nella pagina *Rileva* i seguenti 
 | stream | Specifica il tipo di log: stdout, stderr |
 | time | La data e l'ora di quando si è verificato l'evento. La data e ora è definita fino al millisecondo.|
 | timestamp | La data e l'ora dell'evento registrato. La data e ora è definita fino al millisecondo. |
-{: caption="Tabella 1. Campi per i contenitori Docker" caption-side="top"}
+{: caption="Tabella 2. Campi per i contenitori Docker" caption-side="top"}
+
+## Formato di log Kibana per i contenitori Docker distribuiti in un cluster Kubernetes
+{: #kibana_log_format_containers_kubernetes}
+
+Puoi configurare Kibana per visualizzare nella pagina *Rileva* i seguenti campi per ciascuna voce di log. Questi campi sono impostati da {{site.data.keyword.IBM}} e includono i tuoi dati messaggio. 
+
+| Campo | Descrizione | Altre informazioni |
+|-------|-------------|---------------------------|
+| @timestamp | `yyyy-MM-ddTHH:mm:ss:SS-0500`  <br> L'ora dell'evento registrato. <br> La data e ora è definita fino al millisecondo. | |
+| @version | La versione dell'evento. | |
+| ALCH_TENANT_ID | L'ID dello spazio {{site.data.keyword.Bluemix_notm}}. | |
+| \_id | L'ID univoco per il tuo documento di log. | |
+| \_index | L'indice per la voce di log. | |
+| \_score |  |  |
+| \_type | Il tipo di log, ad esempio *logs*. | |
+| crn_str | Informazioni sull'origine del log. | Per impostazione predefinita, questo campo è impostato da {{site.data.keyword.IBM_notm}}. <br> **Nota**: se invii il messaggio di log in formato JSON valido, e uno dei campi è denominato `crn`, il valore del campo viene sovrascritto con il valore impostato nel messaggio.  |  
+| docker.container_id_str | GUID del contenitore in esecuzione in un pod. | |
+| ibm-containers.account_str | GUID dell'account {{site.data.keyword.Bluemix_notm}}.  |  |
+| ibm-containers.cluster_id_str | GUID del cluster Kubernetes.  |  |
+| ibm-containers.cluster_type_str |  | Valore riservato per uso interno di {{site.data.keyword.IBM_notm}}. |
+| ibm-containers.region_str | Regione in {{site.data.keyword.Bluemix_notm}}.  |  |
+| kubernetes.container_name_str | Nome del contenitore dove viene distribuita un'applicazione.  |  |
+| kubernetes.host | Indirizzo IP pubblico del lavoro dove è in esecuzione il contenitore. |  |
+| kubernetes.labels.*nome_etichetta_di_esempio*\_str | Coppia chiave-valore che colleghi a un oggetto Kubernetes come ad esempio un pod.  | Ogni etichetta che colleghi a un oggetto Kubernetes è elencata come un campo nella voce di log visualizzata in Kibana. <br> Puoi avere 0 o più etichette. |
+| kubernetes.namespace_name_str | Spazio dei nomi Kubernetes dove viene distribuito il contenitore. |  |
+| kubernetes.pod_id_str | GUID del pod dove viene distribuito il contenitore. |  |
+| kubernetes.pod_name_str | Nome del pod. |  |
+| message | Messaggio completo. | Se invii un messaggio in formato JSON valido, ciascun campo viene analizzato singolarmente e visualizzato in Kibana.  |
+| stream_str |  | Valore riservato per uso interno di {{site.data.keyword.IBM_notm}}. |
+|tag_str |  | Valore riservato per uso interno di {{site.data.keyword.IBM_notm}}. |
+{: caption="Tabella 3. Campi per i contenitori Docker" caption-side="top"}
 
 
 ## Formato dei log Kibana per Message Hub
@@ -91,7 +122,7 @@ Puoi configurare Kibana in modo che visualizzi nella pagina *Rileva* i seguenti 
 | \_type | Il tipo di log, ad esempio *syslog*. |
 | loglevel | La severità dell'evento registrato, ad esempio, **Info**. |
 | module | Questo campo è impostato su **MessageHub**. |
-{: caption="Tabella 1. Campi per gli eventi Message Hub" caption-side="top"}
+{: caption="Tabella 4. Campi per gli eventi Message Hub" caption-side="top"}
 
 Esempio di una voce di log:
 

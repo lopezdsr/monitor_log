@@ -16,7 +16,7 @@ lastupdated: "2017-03-29"
 # Registrazione in Bluemix
 {: #logging_bmx_ov}
 
-Le funzionalità di registrazione {{site.data.keyword.Bluemix}} sono integrate nella piattaforma e la raccolta dei dati è abilitata automaticamente per le risorse cloud. Per impostazione predefinita, {{site.data.keyword.Bluemix_notm}}, raccoglie e visualizza i log per le tue applicazioni, i runtime delle applicazioni e i runtime di calcolo in cui queste applicazioni vengono eseguite. 
+Le funzionalità di registrazione {{site.data.keyword.Bluemix}} sono integrate nella piattaforma e la raccolta dei dati è abilitata automaticamente per le risorse cloud. Per impostazione predefinita, {{site.data.keyword.Bluemix_notm}} raccoglie e visualizza i log per le tue applicazioni, i runtime delle applicazioni e i runtime di calcolo in cui queste applicazioni vengono eseguite.
 {:shortdesc}
 
 Puoi utilizzare le funzionalità di registrazione in {{site.data.keyword.Bluemix_notm}} per comprendere il funzionamento della piattaforma cloud e delle risorse eseguite al suo interno. Non è richiesta alcuna strumentazione speciale per raccogliere i log di output standard e di errore standard. Ad esempio, puoi utilizzare i log per fornire un audit trail per un'applicazione, rilevare problemi nel tuo servizio, identificare vulnerabilità, risolvere problemi relativi alle distribuzioni delle applicazioni e al funzionamento del runtime, rilevare problemi nell'infrastruttura in cui è in esecuzione l'applicazione, tracciare la tua applicazione tra i componenti della piattaforma cloud e individuare dei modelli da utilizzare per prevenire azioni che potrebbero compromettere il tuo servizio SLA.
@@ -46,7 +46,6 @@ Mediante la funzionalità di registrazione offerta da {{site.data.keyword.Bluemi
 
 {{site.data.keyword.Bluemix_notm}} registra i dati di log generati da {{site.data.keyword.containershort}}. Per ulteriori informazioni sulla registrazione in {{site.data.keyword.containershort}}, vedi [Registrazione del servizio IBM Bluemix Container](containers/logging_containers_ov.html#logging_containers_ov).  
 
-**Nota:** puoi analizzare i log del contenitore in {{site.data.keyword.Bluemix_notm}} per i contenitori Docker distribuiti nell'infrastruttura cloud gestita da {{site.data.keyword.IBM}}.
 
 ## Analisi dei log in Bluemix
 {: #logging_bmx_ov_ui}

@@ -30,5 +30,5 @@ In caso di problemi o domande durante l'utilizzo delle funzionalità di monitora
 
 Per ulteriori dettagli sull'utilizzo dei forum, vedi [Come ottenere assistenza](https://www.{DomainName}/docs/support/index.html#getting-help).
 
-* Se ancora non riesci a risolvere il problema, puoi aprire un ticket di supporto IBM. Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta [Come contattare il supporto](https://www.{DomainName}/docs/support/index.html#contacting-support).
+* Se ancora non riesci a risolvere il problema, puoi aprire un ticket di supporto IBM. Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, vedi [Come contattare il supporto](https://www.{DomainName}/docs/support/index.html#contacting-support).
 

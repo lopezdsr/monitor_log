@@ -25,17 +25,17 @@ Nella pagina Rileva, puoi creare le query di ricerca e applicare i filtri per vi
 
 Dopo aver definito una nuova ricerca, salvala in modo da poterla riutilizzare per analisi future nella pagina Rileva o per creare le visualizzazioni che puoi utilizzare nei dashboard personalizzati. Per ulteriori informazioni, vedi [Salvataggio di una ricerca](logging_kibana_filtering_logs.html#k4_save_search).
 
-Quando esegui una nuova ricerca, l'istogramma, la tabella e l'elenco dei campi vengono automaticamente aggiornati per visualizzare i risultati della ricerca. Per scoprire quali dati vengono visualizzati, consulta [Identificazione dei dati visualizzati nella pagina Rileva](k4_identify_data.html#k4_identify_data).
+Quando esegui una nuova ricerca, l'istogramma, la tabella e l'elenco dei campi vengono automaticamente aggiornati per visualizzare i risultati della ricerca. Per scoprire quali dati vengono visualizzati, vedi [Identificazione dei dati visualizzati nella pagina Rileva](k4_identify_data.html#k4_identify_data).
 
 Il seguente elenco mostra gli scenari su come filtrare i dati nei tuoi log:
 
 * Puoi creare delle ricerche personalizzate per filtrare i tuoi log. Per ulteriori informazioni, vedi [Filtro dei log definendo query personalizzate](k4_filter_queries.html#k4_filter_queries).
 
-* Puoi eseguire la ricerca nel tuo log per le voci che includono un testo specifico nel valore di un campo. Per ulteriori informazioni, consulta [Filtro dei tuoi log per un testo specifico in un valore del campo](k4_filter_logs_spec_text.html#k4_filter_logs_spec_text).
+* Puoi eseguire la ricerca nel tuo log per le voci che includono un testo specifico nel valore di un campo. Per ulteriori informazioni, vedi [Filtro dei tuoi log per un testo specifico in un valore del campo](k4_filter_logs_spec_text.html#k4_filter_logs_spec_text).
  
-* Puoi eseguire la ricerca nel tuo log per un valore del campo specifico o escludere voci dal log per un valore del campo specifico. Per ulteriori informazioni, consulta [Filtro dei tuoi log per un valore del campo specifico](k4_filter_logs_spec_field.html#k4_filter_logs_spec_field).
+* Puoi eseguire la ricerca nel tuo log per un valore del campo specifico o escludere voci dal log per un valore del campo specifico. Per ulteriori informazioni, vedi [Filtro dei tuoi log per un valore del campo specifico](k4_filter_logs_spec_field.html#k4_filter_logs_spec_field).
  
-* Puoi filtrare i tuoi log per visualizzare le voci in un periodo di tempo. Per ulteriori informazioni, consulta [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
+* Puoi filtrare i tuoi log per visualizzare le voci in un periodo di tempo. Per ulteriori informazioni, vedi [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
      
 
 ## Aggiunta di un filtro a un valore non elencato nell'*Elenco campi*
@@ -45,7 +45,7 @@ Per aggiungere un filtro a un valore non visualizzato nell'*Elenco campi*, ricer
 
 Completa la seguente procedura per aggiungere un filtro al valore che non è disponibile nell'elenco visualizzato nella sezione *Elenco campi*:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
     Ad esempio, la seguente figura mostra i valori delle istanze di un'applicazione CF nell'*Elenco campi*. 
     
@@ -84,13 +84,13 @@ Puoi ricercare le voci che includono un valore del campo specifico.
 
 Completa la seguente procedura per ricercare le voci che includono un valore del campo specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Nell'*Elenco campo*, identifica il campo per cui desideri definire un filtro e fai clic su di esso.
 
     Per il campo viene visualizzato un massimo di 5 valori. Ogni valore ha due pulsanti della lente di ingrandimento. 
     
-    Se non puoi visualizzare il valore, consulta [ Aggiunta di un filtro a un valore non elencato nell'Elenco campi](k4_add_filter_out_value.html#k4_add_filter_out_value).
+    Se non puoi visualizzare il valore, vedi [ Aggiunta di un filtro a un valore non elencato nell'Elenco campi](k4_add_filter_out_value.html#k4_add_filter_out_value).
 
 3. Per aggiungere un filtro che ricerca le voci con un valore del campo, scegli il pulsante di ingrandimento ![Pulsante della lente di ingrandimento nella modalità inclusiva](images/k4_include_field_icon.jpg "Pulsante della lente di ingrandimento nella modalità inclusiva") per tale valore.
 
@@ -143,7 +143,7 @@ Completa la seguente procedura per ricercare le voci che includono un valore del
 
 Completa la seguente procedura per ricercare le voci che includono un'origine del log specifica:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Nell'*Elenco campo*, seleziona il campo **ID_origine**.
 
@@ -151,7 +151,7 @@ Completa la seguente procedura per ricercare le voci che includono un'origine de
 
 3. Per aggiungere un filtro che ricerca le voci che includono un ID_origine specifico, scegli il pulsante di ingrandimento ![Pulsante della lente di ingrandimento nella modalità inclusiva](images/k4_include_field_icon.jpg "Pulsante della lente di ingrandimento nella modalità inclusiva") per tale valore.
 
-    Per un elenco delle origini del log disponibili per le applicazioni CF, consulta [Origini del log per le applicazioni CF](../logging_cf_apps.html#logging_bluemix_cf_apps_log_sources).
+    Per un elenco delle origini del log disponibili per le applicazioni CF, vedi [Origini del log per le applicazioni CF](../logging_cf_apps.html#logging_bluemix_cf_apps_log_sources).
 
     Ad esempio, per aggiungere un filtro che include le voci di log per l'avvio, l'arresto o l'arresto anomalo di un'applicazione CF, seleziona il pulsante della lente di ingrandimento ![Pulsante della lente di ingrandimento nella modalità inclusiva](images/k4_include_field_icon.jpg "Pulsante della lente di ingrandimento nella modalità  inclusiva") disponibile per il valore *CELL* nella sezione *Elenco campi*. La seguente figura mostra il filtro per il valore ID_origine *CELL* abilitato.
     
@@ -169,7 +169,7 @@ Completa la seguente procedura per ricercare le voci che includono un'origine de
 
 Completa la seguente procedura per ricercare le voci che includono un tipo di log specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Nell'*Elenco campo*, seleziona il campo **tipo**.
 
@@ -195,7 +195,7 @@ Completa la seguente procedura per ricercare le voci che includono un tipo di lo
 
 Completa le seguenti attività per visualizzare e filtrare i tuoi log per ID istanza nel dashboard Kibana:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Nell'*Elenco campo*, seleziona uno dei seguenti campi per la ricerca per un ID istanza specifico:
 
@@ -224,7 +224,7 @@ Completa le seguenti attività per visualizzare e filtrare i tuoi log per ID ist
 
 Completa la seguente procedura per ricercare le voci che includono un tipo di messaggio specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Nell'*Elenco campo*, seleziona il campo **tipo_messaggio**.
 
@@ -256,7 +256,7 @@ Quando Elasticsearch analizza il valore di un campo stringa, suddivide il testo 
     
 Completa la seguente procedura per ricercare le voci che includono testo specifico in un valore del campo:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 2. Identifica i campi analizzati in ElasticSearch per impostazione predefinita.
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-19"
 
 ---
 
@@ -50,9 +50,9 @@ Puoi avviare Kibana in uno dei seguenti modi:
 
 * Da {{site.data.keyword.Bluemix_notm}}
 
-    Puoi avviare i log della tua specifica applicazione CF in Kibana, nel contesto di quella specifica applicazione.
+    Puoi eseguire l'avvio ai tuoi specifici log dell'applicazione CF nel contesto di tale specifica applicazione.
     
-    Puoi avviare i log del tuo specifico contenitore Docker in Kibana, nel contesto di quello specifico contenitore. 
+    Puoi eseguire l'avvio ai tuoi specifici log del contenitore Docker in Kibana nel contesto di tale specifico contenitore. Questa funzione si applica solo ai contenitori distribuiti nell'infrastruttura cloud gestita da {{site.data.keyword.Bluemix_notm}}.
     
     Per le applicazioni CF, la query che viene utilizzata per filtrare i dati disponibili per l'analisi in Kibana richiama le voci di log per l'applicazione Cloud Foundry. Le informazioni di log visualizzate da Kibana per impostazione predefinita sono tutte correlate a un'unica applicazione Cloud Foundry e a tutte le sue istanze. 
     
@@ -68,7 +68,7 @@ Puoi avviare Kibana in uno dei seguenti modi:
     
     Per ulteriori informazioni, vedi [Passaggio al dashboard Kibana da un browser web](k4_launch.html#launch_Kibana_from_browser).
     
-    Quando avvii Kibana da un browser, puoi scegliere di utilizzare Kibana 4 o Kibana 3. **Nota:** Kibana 3 è obsoleto. Per ulteriori informazioni sull'utilizzo di Kibana per analizzare i tuoi log, consulta [Analisi dei log in Kibana 3 (Obsoleto)](../logging_view_kibana3.html#analyzing_logs_Kibana3).
+    Quando avvii Kibana da un browser, puoi scegliere di utilizzare Kibana 4 o Kibana 3. **Nota:** Kibana 3 è obsoleto. Per ulteriori informazioni sull'utilizzo di Kibana per analizzare i tuoi log, vedi [Analisi dei log in Kibana 3 (Obsoleto)](../logging_view_kibana3.html#analyzing_logs_Kibana3).
 
 
 ## Analizza i dati interattivamente

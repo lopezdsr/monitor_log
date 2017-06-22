@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-06"
+lastupdated: "2017-05-26"
 
 ---
 
@@ -23,7 +23,7 @@ Quando esegui le tue applicazioni in un PaaS (platform-as-a-service) cloud come 
 
 La seguente figura mostra una visualizzazione di alto livello della registrazione di applicazioni Cloud Foundry in {{site.data.keyword.Bluemix_notm}}:
 
-![Panoramica dei componenti di alto livello per le applicazioni CF](../images/logging_cf_apps_ov.jpg "Panoramica dei componenti di alto livello per le applicazioni CF")
+![Panoramica dei componenti di alto livello per le applicazioni CF](../images/logging_cf_apps_ov.gif "Panoramica dei componenti di alto livello per le applicazioni CF")
  
 La registrazione delle applicazioni Cloud Foundry viene abilitata automaticamente quando utilizzi l'infrastruttura Cloud Foundry per eseguire le tue applicazioni su {{site.data.keyword.Bluemix_notm}}. Per visualizzare i log del runtime Cloud Foundry, devi scrivere i tuoi log in STDOUT e STDERR. Per ulteriori informazioni, vedi [Registrazione delle applicazioni di runtime attraverso le applicazioni CF](logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
 

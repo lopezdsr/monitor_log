@@ -47,7 +47,7 @@ La seguente tabella elenca diverse attività che puoi eseguire nella pagina Dash
 | [Aggiungere una visualizzazione](logging_kibana_analize_logs_dashboard.html#k4_dashboard_add_visualization) | Puoi aggiungere una ricerca o una visualizzazione esistente a un dashboard.|
 {: caption="Tabella 2. Attività per lavorare con i dashboard" caption-side="top"}
 
-Per ulteriori informazioni su Kibana, consulta [Kibana User Guide ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}.
+Per ulteriori informazioni su Kibana, vedi [Kibana User Guide ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}.
 
 ## Aggiunta di una nuova ricerca o visualizzazione
 {: #k4_dashboard_add_visualization}

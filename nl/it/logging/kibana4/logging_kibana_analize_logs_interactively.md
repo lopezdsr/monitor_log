@@ -19,7 +19,7 @@ lastupdated: "2017-04-06"
 Nella pagina Rileva, puoi visualizzare e analizzare i tuoi log {{site.data.keyword.Bluemix}} interattivamente. Puoi definire le query di ricerca per filtrare i dati utilizzando il linguaggio di query Lucene. Per ogni query ricerca, puoi applicare i filtri per restringere le voci disponibili per l'analisi. Puoi salvare un ricerca per un riutilizzo futuro.
 {:shortdesc}
 
-In {{site.data.keyword.Bluemix_notm}}, per impostazione predefinita, la serie di dati visualizzati nella pagina Rileva quando avvii Kibana dalla IU {{site.data.keyword.Bluemix_notm}}, è configurata solo per mostrare le voci per il contenitore o l'applicazione Cloud Foundry (CF) da cui hai avviato Kibana. Per ulteriori informazioni su come visualizzare quale sottoserie dei tuoi dati viene visualizzata dalla pagina Rileva, consulta [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
+In {{site.data.keyword.Bluemix_notm}}, per impostazione predefinita, la serie di dati visualizzati nella pagina Rileva quando avvii Kibana dalla IU {{site.data.keyword.Bluemix_notm}}, è configurata solo per mostrare le voci per il contenitore o l'applicazione Cloud Foundry (CF) da cui hai avviato Kibana. Per ulteriori informazioni su come visualizzare quale sottoserie dei tuoi dati viene visualizzata dalla pagina Rileva, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](logging_kibana_analize_logs_interactively.html#k4_identify_data).
 
 La seguente tabella mostra la query predefinita per la risorsa quando avvii kibana da {{site.data.keyword.Bluemix_notm}}:
 
@@ -66,7 +66,7 @@ Per definire una nuova ricerca, utilizza la query di ricerca predefinita come tu
 
     Ad esempio, se la tua applicazione CF ha più istanze, potresti voler analizzare i dati di un'istanza specifica. Puoi definire un filtro del campo per il valore dell'ID dell'istanza specifico che desideri analizzare. 
     
-* Personalizza il *Selezionatore di tempo* per i dati basati sul tempo. Puoi definire un intervallo di tempo assoluto per una query, uno relativo o scegliere da una serie di valori predefiniti. Per ulteriori informazioni, consulta [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
+* Personalizza il *Selezionatore di tempo* per i dati basati sul tempo. Puoi definire un intervallo di tempo assoluto per una query, uno relativo o scegliere da una serie di valori predefiniti. Per ulteriori informazioni, vedi [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
 
 Dopo aver configurato la ricerca che definisce la sottoserie di dati che desideri analizzare, puoi salvarla per un riutilizzo successivo.
 
@@ -121,7 +121,7 @@ Puoi aggiungere una colonna del campo alla tabella scegliendo una delle seguenti
     3. Fai clic sull'icona **Attiva colonna nella tabella** ![Attiva colonna nella tabella](images/k4_toggle_field_icon.jpg).
     
 
-**Nota:** quando aggiungi una colonna del campo alla tabella per la prima volta, la colonna del campo *_source* visualizzata nella tabella è nascosta. Il campo *_source* mostra il valore di ogni campo per ogni voce di log. Per visualizzare altri valori del campo per una voce di log nella tabella dopo aver aggiunto una colonna alla tabella, consulta la scheda vista tabella o la scheda JSON di ogni voce.
+**Nota:** quando aggiungi una colonna del campo alla tabella per la prima volta, la colonna del campo *_source* visualizzata nella tabella è nascosta. Il campo *_source* mostra il valore di ogni campo per ogni voce di log. Per visualizzare altri valori del campo per una voce di log nella tabella dopo aver aggiunto una colonna alla tabella, vedi la scheda vista tabella o la scheda JSON di ogni voce.
 
 Ad esempio, se aggiungi il campo *application_id* alla tabella, essa viene modificata come segue:
 
@@ -131,7 +131,7 @@ Ad esempio, se aggiungi il campo *application_id* alla tabella, essa viene modif
 ## Aggiornamento automatico dei dati
 {: #kibana_discover_view_refresh_interval}
 
-Per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il periodo di *Aggiornamento automatico* è impostato su **DISATTIVO** e i dati che puoi visualizzare in Kibana corrispondono agli ultimi 15 minuti da quando hai avviato Kibana. I 15 minuti corrispondono al filtro temporale preconfigurato. Puoi scegliere di impostare un periodo di tempo differente. Per ulteriori informazioni, consulta [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
+Per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il periodo di *Aggiornamento automatico* è impostato su **DISATTIVO** e i dati che puoi visualizzare in Kibana corrispondono agli ultimi 15 minuti da quando hai avviato Kibana. I 15 minuti corrispondono al filtro temporale preconfigurato. Puoi scegliere di impostare un periodo di tempo differente. Per ulteriori informazioni, vedi [Configurazione di un filtro temporale](logging_kibana_set_time_filter.html#set_time_filter).
 
 Completa la seguente procedura per impostare un periodo di *Aggiornamento automatico*:
 
