@@ -16,27 +16,18 @@ Monitoring and Logging
         logging/dedicated/logging_local_dedicated.md
         
     {: .topicgroup}
-    About monitoring
-        monitoring/monitoring_bmx_ov.md
-        monitoring/cf/monitoring_cf_apps.md
-        monitoring/containers/monitoring_containers_ov.md
-    
-    {: .topicgroup}
     Tutorials
         logging/containers/tutorials/kibana_tutorial_1.md
-        monitoring/containers/tutorials/grafana_tutorial_1.md
     
     {: .topicgroup}
     Related links
         [Learn more about Kibana](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}
         [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
-        [Grafana User Guide](http://docs.grafana.org/guides/getting_started/){: new_window}
     {: .navgroup-end}
     
     {: .navgroup id="howto"}
     logging/logging_view_dashboard.md
     logging/logging_view_cli.md
-    monitoring/containers/analyzing_metrics_bmx_ui.md
         
     {: .topicgroup}
     Advanced log analysis (Kibana)
@@ -55,11 +46,6 @@ Monitoring and Logging
     Docker containers
         logging/containers/logging_containers_other_logs.md
         
-    {: .topicgroup}
-    Grafana
-        monitoring/grafana/navigating_grafana.md
-        monitoring/grafana/create_grafana_dashboard.md
-                
     {: .topicgroup}
     Log analysis (Kibana 3) Deprecated
         logging/logging_view_kibana3.md
@@ -81,10 +67,6 @@ Monitoring and Logging
         logging/external/logging_external_hosts.md
     {: .navgroup-end}
 
-    {: .navgroup id="help"}
-    logging/logging_gettinghelp.md
-    monitoring/monitoring_gettinghelp.md
-    
     {: .topicgroup}
     FAQ
         logging/qa/logging_qa_kibana.md
